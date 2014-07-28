@@ -8,6 +8,9 @@ import org.jinn.typhoon.common.Message;
 public abstract class MessageDispatcher {
 
     public void dispatchMessage(Message message){}
+
     public void startup() {}
+
     public void shutdown() {}
+
 }

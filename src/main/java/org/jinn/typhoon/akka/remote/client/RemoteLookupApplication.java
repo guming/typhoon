@@ -1,12 +1,14 @@
 package org.jinn.typhoon.akka.remote.client;
 
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
+import akka.actor.*;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.kernel.Bootable;
+import akka.remote.routing.RemoteRouterConfig;
+import akka.routing.FromConfig;
+import akka.routing.RoundRobinPool;
 import com.typesafe.config.ConfigFactory;
+import org.jinn.typhoon.akka.remote.server.RedisCheckActor;
 import org.jinn.typhoon.common.Message;
 import org.jinn.typhoon.common.MessageDispatcher;
 
@@ -17,7 +19,7 @@ import java.util.Random;
  */
 public class RemoteLookupApplication  extends MessageDispatcher implements Bootable {
 
-    Random r=new Random();
+//    Random r=new Random();
     private ActorSystem system;
     private ActorRef actor;
     private ActorRef remoteActor;
@@ -25,18 +27,22 @@ public class RemoteLookupApplication  extends MessageDispatcher implements Boota
     public RemoteLookupApplication() {
         system = ActorSystem.create("RemoteLookupApplication", ConfigFactory.load("remotelookup"));
         actor = system.actorOf(Props.create(RemoteLookupActor.class), "lookupactor");
+        remoteActor = system.actorOf(FromConfig.getInstance().props(Props.create(RedisCheckActor.class)),
+                "aggregation");
     }
 
-    public ActorRef getRemoteActor(int number){
-        remoteActor = system.actorFor(
-                "akka.tcp://CheckApplication@127.0.0.1:2552/user/redischeckactor"+number);
+    public ActorRef getRemoteActor(){
+
+//        remoteActor = system.actorFor(
+//                "akka.tcp://CheckApplication@127.0.0.1:2552/user/router");
+
         return remoteActor;
     }
 
     @Override
     public void dispatchMessage(Message message) {
 
-        actor.tell(new InternalMsg.ActorOpMsg(getRemoteActor(r.nextInt(1000)), message), null);
+        actor.tell(new InternalMsg.ActorOpMsg(getRemoteActor(), message), null);
     }
 
     @Override

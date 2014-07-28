@@ -20,6 +20,10 @@ public class Message implements Serializable {
         System.out.println("process message:"+msg);
     }
 
+    public String getMsg() {
+        return msg;
+    }
+
     @Override
     public String toString() {
         return "Message{" +

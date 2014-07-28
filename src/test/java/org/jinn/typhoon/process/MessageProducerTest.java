@@ -1,8 +1,11 @@
 package org.jinn.typhoon.process;
 
 import kafka.producer.KeyedMessage;
+import org.jinn.typhoon.utils.JSONUtil;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 /**
@@ -18,12 +21,24 @@ public class MessageProducerTest {
 
 
         for (long nEvents = 0; nEvents < events; nEvents++) {
-            long runtime = new Date().getTime();
-            String ip = "192.168.2." + rnd.nextInt(255);
-            String msg = runtime + ",www.example.com," + ip;
-            KeyedMessage<String, String> data = new KeyedMessage<String, String>("test", ip, msg);
+
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("action","add");
+            map.put("time", "1406168332.35081900");
+            map.put("redis_key_hash", "1");
+            map.put("hash", nEvents);
+            String json=null;
+            try {
+                json=JSONUtil.beanToJson(map);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            KeyedMessage<String, String> data = new KeyedMessage<String, String>("test", json+nEvents, json);
             messageProducer.getProducer().send(data);
         }
+        KeyedMessage<String, String> data = new KeyedMessage<String, String>("test", "0.0.0.0", "1");
+        messageProducer.getProducer().send(data);
+
         messageProducer.getProducer().close();
     }
 
