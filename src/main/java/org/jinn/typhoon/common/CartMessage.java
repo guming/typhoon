@@ -1,8 +1,11 @@
 package org.jinn.typhoon.common;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 /**
  * Created by gumingcn on 14-7-28.
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class CartMessage {
 
     private String action;
@@ -18,6 +21,8 @@ public class CartMessage {
     private String session_id;
 
     private Info info=new Info();
+
+    private String DB_key_hash;
 
 
 
@@ -86,7 +91,16 @@ public class CartMessage {
                 ", source='" + source + '\'' +
                 ", mars_cid='" + mars_cid + '\'' +
                 ", session_id='" + session_id + '\'' +
-                ", info=" + info.toString() +
+                ", info=" + info +
+                ", DB_key_hash='" + DB_key_hash + '\'' +
                 '}';
+    }
+
+    public String getDB_key_hash() {
+        return DB_key_hash;
+    }
+
+    public void setDB_key_hash(String DB_key_hash) {
+        this.DB_key_hash = DB_key_hash;
     }
 }

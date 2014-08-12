@@ -16,8 +16,8 @@ start(){
         printf 'Existing process: %d\n' "$pid"
                 retval=1
         else
-                java  -Xms512M \
-                      -Xmx512M \
+                java  -Xms1024M \
+                      -Xmx1024M \
                       -XX:+UseParallelGC \
                       -XX:+AggressiveOpts \
                       -XX:+UseFastAccessorMethods \
@@ -38,7 +38,8 @@ start(){
 }
 # stop the server
 stop(){
-  printf 'Stopping the server of typhoon\n'
+  printf 'Stopping the server of typhoon dispatcher \n'
+
   if [ -f "$pidfile" ] ; then
     pid=`cat "$pidfile"`
     printf "Sending the terminal signal to the process: %s\n" "$pid"

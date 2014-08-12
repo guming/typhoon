@@ -4,13 +4,13 @@ package org.jinn.typhoon.common;
  * Created by gumingcn on 14-7-28.
  */
 public class Info {
-        private Long user_id;
-        private Long cart_id;
-        private Long cart_record_id;
-        private Long size_id;
-        private Long brand_id;
-        private Long merchandise_id;
-        private Long num;
+        private Long user_id=0l;
+        private Long cart_id=0l;
+        private Long cart_record_id=0l;
+        private Long size_id=0l;
+        private Long brand_id=0l;
+        private Long merchandise_id=0l;
+        private Long num=0l;
         private String channel;
         private String warehouse;
 

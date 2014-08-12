@@ -1,0 +1,812 @@
+2014-08-05 17:03:04 [INFO] Verifying properties
+2014-08-05 17:03:04 [INFO] Property auto.commit.interval.ms is overridden to 2000
+2014-08-05 17:03:04 [INFO] Property group.id is overridden to typhoon-worker
+2014-08-05 17:03:04 [INFO] Property zookeeper.connect is overridden to 127.0.0.1:2181
+2014-08-05 17:03:04 [INFO] Property zookeeper.session.timeout.ms is overridden to 500
+2014-08-05 17:03:04 [INFO] Property zookeeper.sync.time.ms is overridden to 200
+2014-08-05 17:03:04 [INFO] [typhoon-worker_jinngm.local-1407229384938-6325df4e], Connecting to zookeeper instance at 127.0.0.1:2181
+2014-08-05 17:03:04 [INFO] Starting ZkClient event thread.
+2014-08-05 17:03:04 [INFO] Client environment:zookeeper.version=3.3.3-1203054, built on 11/17/2011 05:47 GMT
+2014-08-05 17:03:04 [INFO] Client environment:host.name=localhost
+2014-08-05 17:03:04 [INFO] Client environment:java.version=1.6.0_65
+2014-08-05 17:03:04 [INFO] Client environment:java.vendor=Apple Inc.
+2014-08-05 17:03:04 [INFO] Client environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2014-08-05 17:03:04 [INFO] Client environment:java.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Users/gumingcn/dev/gitcode/typhoon/target/classes:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.2.3/jackson-jaxrs-json-provider-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.2.3/jackson-jaxrs-base-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.2.3/jackson-module-jaxb-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-cluster_2.10/2.3.2/akka-cluster_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-remote_2.10/2.3.2/akka-remote_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-actor_2.10/2.3.2/akka-actor_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/config/1.2.0/config-1.2.0.jar:/Users/gumingcn/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar:/Users/gumingcn/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/gumingcn/.m2/repository/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-testkit_2.10/2.3.2/akka-testkit_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-kernel_2.10/2.3.2/akka-kernel_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/redis4j/redis4j/0.1.0/redis4j-0.1.0.jar:/Users/gumingcn/.m2/repository/commons-lang/commons-lang/2.3/commons-lang-2.3.jar:/Users/gumingcn/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/gumingcn/.m2/repository/commons-pool/commons-pool/1.3/commons-pool-1.3.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/gumingcn/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/gumingcn/.m2/repository/redis/clients/jedis/2.2.1/jedis-2.2.1.jar:/Users/gumingcn/.m2/repository/commons-io/commons-io/1.2/commons-io-1.2.jar:/Users/gumingcn/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/Users/gumingcn/.m2/repository/com/rabbitmq/amqp-client/3.3.1/amqp-client-3.3.1.jar:/Users/gumingcn/.m2/repository/kafka/kafka-java/0.8.1.1/kafka-java-0.8.1.1.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-web/2.2.0/metrics-web-2.2.0.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/gumingcn/.m2/repository/org/apache/zookeeper/zookeeper/3.3.4/zookeeper-3.3.4.jar:/Users/gumingcn/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/gumingcn/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/gumingcn/.m2/repository/javax/jms/jms/1.1/jms-1.1.jar:/Users/gumingcn/.m2/repository/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar:/Users/gumingcn/.m2/repository/com/sun/jmx/jmxri/1.2.1/jmxri-1.2.1.jar:/Users/gumingcn/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/gumingcn/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar:/Users/gumingcn/.m2/repository/com/zkClient/zkClient/0.3/zkClient-0.3.jar:/Users/gumingcn/.m2/repository/net/sf/ehcache/ehcache-core/2.5.2/ehcache-core-2.5.2.jar:/Applications/IntelliJ IDEA 13.app/lib/idea_rt.jar
+2014-08-05 17:03:04 [INFO] Client environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2014-08-05 17:03:04 [INFO] Client environment:java.io.tmpdir=/var/folders/gk/rsjjycnj2w35gqh4h8s48gs40000gn/T/
+2014-08-05 17:03:04 [INFO] Client environment:java.compiler=<NA>
+2014-08-05 17:03:04 [INFO] Client environment:os.name=Mac OS X
+2014-08-05 17:03:04 [INFO] Client environment:os.arch=x86_64
+2014-08-05 17:03:04 [INFO] Client environment:os.version=10.9.4
+2014-08-05 17:03:04 [INFO] Client environment:user.name=gumingcn
+2014-08-05 17:03:04 [INFO] Client environment:user.home=/Users/gumingcn
+2014-08-05 17:03:04 [INFO] Client environment:user.dir=/Users/gumingcn/dev/gitcode/typhoon
+2014-08-05 17:03:04 [INFO] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=500 watcher=org.I0Itec.zkclient.ZkClient@42f1916f
+2014-08-05 17:03:05 [INFO] Opening socket connection to server /127.0.0.1:2181
+2014-08-05 17:03:05 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2014-08-05 17:03:05 [INFO] Terminate ZkClient event thread.
+2014-08-05 17:03:05 [INFO] Client session timed out, have not heard from server in 505ms for sessionid 0x0, closing socket connection and attempting reconnect
+2014-08-05 17:03:05 [INFO] Session: 0x0 closed
+2014-08-05 17:03:05 [INFO] EventThread shut down
+2014-08-05 17:03:14 [INFO] Verifying properties
+2014-08-05 17:03:14 [INFO] Property auto.commit.interval.ms is overridden to 2000
+2014-08-05 17:03:14 [INFO] Property group.id is overridden to typhoon-worker
+2014-08-05 17:03:14 [INFO] Property zookeeper.connect is overridden to 127.0.0.1:2181
+2014-08-05 17:03:14 [INFO] Property zookeeper.session.timeout.ms is overridden to 500
+2014-08-05 17:03:14 [INFO] Property zookeeper.sync.time.ms is overridden to 200
+2014-08-05 17:03:14 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], Connecting to zookeeper instance at 127.0.0.1:2181
+2014-08-05 17:03:14 [INFO] Starting ZkClient event thread.
+2014-08-05 17:03:14 [INFO] Client environment:zookeeper.version=3.3.3-1203054, built on 11/17/2011 05:47 GMT
+2014-08-05 17:03:14 [INFO] Client environment:host.name=localhost
+2014-08-05 17:03:14 [INFO] Client environment:java.version=1.6.0_65
+2014-08-05 17:03:14 [INFO] Client environment:java.vendor=Apple Inc.
+2014-08-05 17:03:14 [INFO] Client environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2014-08-05 17:03:14 [INFO] Client environment:java.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Users/gumingcn/dev/gitcode/typhoon/target/classes:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.2.3/jackson-jaxrs-json-provider-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.2.3/jackson-jaxrs-base-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.2.3/jackson-module-jaxb-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-cluster_2.10/2.3.2/akka-cluster_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-remote_2.10/2.3.2/akka-remote_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-actor_2.10/2.3.2/akka-actor_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/config/1.2.0/config-1.2.0.jar:/Users/gumingcn/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar:/Users/gumingcn/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/gumingcn/.m2/repository/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-testkit_2.10/2.3.2/akka-testkit_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-kernel_2.10/2.3.2/akka-kernel_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/redis4j/redis4j/0.1.0/redis4j-0.1.0.jar:/Users/gumingcn/.m2/repository/commons-lang/commons-lang/2.3/commons-lang-2.3.jar:/Users/gumingcn/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/gumingcn/.m2/repository/commons-pool/commons-pool/1.3/commons-pool-1.3.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/gumingcn/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/gumingcn/.m2/repository/redis/clients/jedis/2.2.1/jedis-2.2.1.jar:/Users/gumingcn/.m2/repository/commons-io/commons-io/1.2/commons-io-1.2.jar:/Users/gumingcn/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/Users/gumingcn/.m2/repository/com/rabbitmq/amqp-client/3.3.1/amqp-client-3.3.1.jar:/Users/gumingcn/.m2/repository/kafka/kafka-java/0.8.1.1/kafka-java-0.8.1.1.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-web/2.2.0/metrics-web-2.2.0.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/gumingcn/.m2/repository/org/apache/zookeeper/zookeeper/3.3.4/zookeeper-3.3.4.jar:/Users/gumingcn/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/gumingcn/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/gumingcn/.m2/repository/javax/jms/jms/1.1/jms-1.1.jar:/Users/gumingcn/.m2/repository/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar:/Users/gumingcn/.m2/repository/com/sun/jmx/jmxri/1.2.1/jmxri-1.2.1.jar:/Users/gumingcn/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/gumingcn/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar:/Users/gumingcn/.m2/repository/com/zkClient/zkClient/0.3/zkClient-0.3.jar:/Users/gumingcn/.m2/repository/net/sf/ehcache/ehcache-core/2.5.2/ehcache-core-2.5.2.jar:/Applications/IntelliJ IDEA 13.app/lib/idea_rt.jar
+2014-08-05 17:03:14 [INFO] Client environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2014-08-05 17:03:14 [INFO] Client environment:java.io.tmpdir=/var/folders/gk/rsjjycnj2w35gqh4h8s48gs40000gn/T/
+2014-08-05 17:03:14 [INFO] Client environment:java.compiler=<NA>
+2014-08-05 17:03:14 [INFO] Client environment:os.name=Mac OS X
+2014-08-05 17:03:14 [INFO] Client environment:os.arch=x86_64
+2014-08-05 17:03:14 [INFO] Client environment:os.version=10.9.4
+2014-08-05 17:03:14 [INFO] Client environment:user.name=gumingcn
+2014-08-05 17:03:14 [INFO] Client environment:user.home=/Users/gumingcn
+2014-08-05 17:03:14 [INFO] Client environment:user.dir=/Users/gumingcn/dev/gitcode/typhoon
+2014-08-05 17:03:14 [INFO] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=500 watcher=org.I0Itec.zkclient.ZkClient@556917ee
+2014-08-05 17:03:14 [INFO] Opening socket connection to server /127.0.0.1:2181
+2014-08-05 17:03:14 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2014-08-05 17:03:15 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x147a5633b2f0002, negotiated timeout = 6000
+2014-08-05 17:03:15 [INFO] zookeeper state changed (SyncConnected)
+2014-08-05 17:03:15 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], starting auto committer every 2000 ms
+2014-08-05 17:03:16 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], begin registering consumer typhoon-worker_jinngm.local-1407229394914-f9e600ca in ZK
+2014-08-05 17:03:16 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], end registering consumer typhoon-worker_jinngm.local-1407229394914-f9e600ca in ZK
+2014-08-05 17:03:16 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], starting watcher executor thread for consumer typhoon-worker_jinngm.local-1407229394914-f9e600ca
+2014-08-05 17:03:16 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], begin rebalancing consumer typhoon-worker_jinngm.local-1407229394914-f9e600ca try #0
+2014-08-05 17:03:17 [INFO] [ConsumerFetcherManager-1407229395168] Stopping leader finder thread
+2014-08-05 17:03:17 [INFO] [ConsumerFetcherManager-1407229395168] Stopping all fetchers
+2014-08-05 17:03:17 [INFO] [ConsumerFetcherManager-1407229395168] All connections stopped
+2014-08-05 17:03:17 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], Cleared all relevant queues for this fetcher
+2014-08-05 17:03:17 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:03:17 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:03:17 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], Releasing partition ownership
+2014-08-05 17:03:17 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], Consumer typhoon-worker_jinngm.local-1407229394914-f9e600ca rebalancing the following partitions: ArrayBuffer() for topic cart_operation_data with consumers: List(typhoon-worker_jinngm.local-1407229394914-f9e600ca-0, typhoon-worker_jinngm.local-1407229394914-f9e600ca-1, typhoon-worker_jinngm.local-1407229394914-f9e600ca-2, typhoon-worker_jinngm.local-1407229394914-f9e600ca-3)
+2014-08-05 17:03:17 [WARN] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229394914-f9e600ca-0 for topic cart_operation_data
+2014-08-05 17:03:17 [WARN] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229394914-f9e600ca-1 for topic cart_operation_data
+2014-08-05 17:03:17 [WARN] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229394914-f9e600ca-2 for topic cart_operation_data
+2014-08-05 17:03:17 [WARN] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229394914-f9e600ca-3 for topic cart_operation_data
+2014-08-05 17:03:17 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], Updating the cache
+2014-08-05 17:03:17 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], Consumer typhoon-worker_jinngm.local-1407229394914-f9e600ca selected partitions : 
+2014-08-05 17:03:17 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca-leader-finder-thread], Starting 
+2014-08-05 17:03:17 [INFO] [typhoon-worker_jinngm.local-1407229394914-f9e600ca], end rebalancing consumer typhoon-worker_jinngm.local-1407229394914-f9e600ca try #0
+2014-08-05 17:05:17 [INFO] Verifying properties
+2014-08-05 17:05:17 [INFO] Property auto.commit.interval.ms is overridden to 2000
+2014-08-05 17:05:17 [INFO] Property group.id is overridden to typhoon-worker
+2014-08-05 17:05:17 [INFO] Property zookeeper.connect is overridden to 127.0.0.1:2181
+2014-08-05 17:05:17 [INFO] Property zookeeper.session.timeout.ms is overridden to 500
+2014-08-05 17:05:17 [INFO] Property zookeeper.sync.time.ms is overridden to 200
+2014-08-05 17:05:17 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Connecting to zookeeper instance at 127.0.0.1:2181
+2014-08-05 17:05:17 [INFO] Starting ZkClient event thread.
+2014-08-05 17:05:17 [INFO] Client environment:zookeeper.version=3.3.3-1203054, built on 11/17/2011 05:47 GMT
+2014-08-05 17:05:17 [INFO] Client environment:host.name=localhost
+2014-08-05 17:05:17 [INFO] Client environment:java.version=1.6.0_65
+2014-08-05 17:05:17 [INFO] Client environment:java.vendor=Apple Inc.
+2014-08-05 17:05:17 [INFO] Client environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2014-08-05 17:05:17 [INFO] Client environment:java.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Users/gumingcn/dev/gitcode/typhoon/target/classes:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.2.3/jackson-jaxrs-json-provider-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.2.3/jackson-jaxrs-base-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.2.3/jackson-module-jaxb-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-cluster_2.10/2.3.2/akka-cluster_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-remote_2.10/2.3.2/akka-remote_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-actor_2.10/2.3.2/akka-actor_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/config/1.2.0/config-1.2.0.jar:/Users/gumingcn/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar:/Users/gumingcn/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/gumingcn/.m2/repository/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-testkit_2.10/2.3.2/akka-testkit_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-kernel_2.10/2.3.2/akka-kernel_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/redis4j/redis4j/0.1.0/redis4j-0.1.0.jar:/Users/gumingcn/.m2/repository/commons-lang/commons-lang/2.3/commons-lang-2.3.jar:/Users/gumingcn/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/gumingcn/.m2/repository/commons-pool/commons-pool/1.3/commons-pool-1.3.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/gumingcn/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/gumingcn/.m2/repository/redis/clients/jedis/2.2.1/jedis-2.2.1.jar:/Users/gumingcn/.m2/repository/commons-io/commons-io/1.2/commons-io-1.2.jar:/Users/gumingcn/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/Users/gumingcn/.m2/repository/com/rabbitmq/amqp-client/3.3.1/amqp-client-3.3.1.jar:/Users/gumingcn/.m2/repository/kafka/kafka-java/0.8.1.1/kafka-java-0.8.1.1.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-web/2.2.0/metrics-web-2.2.0.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/gumingcn/.m2/repository/org/apache/zookeeper/zookeeper/3.3.4/zookeeper-3.3.4.jar:/Users/gumingcn/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/gumingcn/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/gumingcn/.m2/repository/javax/jms/jms/1.1/jms-1.1.jar:/Users/gumingcn/.m2/repository/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar:/Users/gumingcn/.m2/repository/com/sun/jmx/jmxri/1.2.1/jmxri-1.2.1.jar:/Users/gumingcn/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/gumingcn/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar:/Users/gumingcn/.m2/repository/com/zkClient/zkClient/0.3/zkClient-0.3.jar:/Users/gumingcn/.m2/repository/net/sf/ehcache/ehcache-core/2.5.2/ehcache-core-2.5.2.jar:/Applications/IntelliJ IDEA 13.app/lib/idea_rt.jar
+2014-08-05 17:05:17 [INFO] Client environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2014-08-05 17:05:17 [INFO] Client environment:java.io.tmpdir=/var/folders/gk/rsjjycnj2w35gqh4h8s48gs40000gn/T/
+2014-08-05 17:05:17 [INFO] Client environment:java.compiler=<NA>
+2014-08-05 17:05:17 [INFO] Client environment:os.name=Mac OS X
+2014-08-05 17:05:17 [INFO] Client environment:os.arch=x86_64
+2014-08-05 17:05:17 [INFO] Client environment:os.version=10.9.4
+2014-08-05 17:05:17 [INFO] Client environment:user.name=gumingcn
+2014-08-05 17:05:17 [INFO] Client environment:user.home=/Users/gumingcn
+2014-08-05 17:05:17 [INFO] Client environment:user.dir=/Users/gumingcn/dev/gitcode/typhoon
+2014-08-05 17:05:17 [INFO] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=500 watcher=org.I0Itec.zkclient.ZkClient@6fe78c96
+2014-08-05 17:05:17 [INFO] Opening socket connection to server /127.0.0.1:2181
+2014-08-05 17:05:17 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2014-08-05 17:05:17 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x147a5633b2f0003, negotiated timeout = 6000
+2014-08-05 17:05:17 [INFO] zookeeper state changed (SyncConnected)
+2014-08-05 17:05:17 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], starting auto committer every 2000 ms
+2014-08-05 17:05:18 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], begin registering consumer typhoon-worker_jinngm.local-1407229517720-99d0e0f0 in ZK
+2014-08-05 17:05:18 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], end registering consumer typhoon-worker_jinngm.local-1407229517720-99d0e0f0 in ZK
+2014-08-05 17:05:18 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], starting watcher executor thread for consumer typhoon-worker_jinngm.local-1407229517720-99d0e0f0
+2014-08-05 17:05:18 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], begin rebalancing consumer typhoon-worker_jinngm.local-1407229517720-99d0e0f0 try #0
+2014-08-05 17:05:19 [INFO] [ConsumerFetcherManager-1407229517820] Stopping leader finder thread
+2014-08-05 17:05:19 [INFO] [ConsumerFetcherManager-1407229517820] Stopping all fetchers
+2014-08-05 17:05:19 [INFO] [ConsumerFetcherManager-1407229517820] All connections stopped
+2014-08-05 17:05:19 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Cleared all relevant queues for this fetcher
+2014-08-05 17:05:19 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:05:19 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:05:19 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Releasing partition ownership
+2014-08-05 17:05:19 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Consumer typhoon-worker_jinngm.local-1407229517720-99d0e0f0 rebalancing the following partitions: ArrayBuffer() for topic cart_operation_data with consumers: List(typhoon-worker_jinngm.local-1407229517720-99d0e0f0-0, typhoon-worker_jinngm.local-1407229517720-99d0e0f0-1, typhoon-worker_jinngm.local-1407229517720-99d0e0f0-2, typhoon-worker_jinngm.local-1407229517720-99d0e0f0-3)
+2014-08-05 17:05:19 [WARN] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229517720-99d0e0f0-2 for topic cart_operation_data
+2014-08-05 17:05:19 [WARN] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229517720-99d0e0f0-3 for topic cart_operation_data
+2014-08-05 17:05:19 [WARN] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229517720-99d0e0f0-0 for topic cart_operation_data
+2014-08-05 17:05:19 [WARN] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229517720-99d0e0f0-1 for topic cart_operation_data
+2014-08-05 17:05:19 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Updating the cache
+2014-08-05 17:05:19 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Consumer typhoon-worker_jinngm.local-1407229517720-99d0e0f0 selected partitions : 
+2014-08-05 17:05:19 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0-leader-finder-thread], Starting 
+2014-08-05 17:05:19 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], end rebalancing consumer typhoon-worker_jinngm.local-1407229517720-99d0e0f0 try #0
+2014-08-05 17:05:46 [INFO] Verifying properties
+2014-08-05 17:05:46 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:05:46 [INFO] Property partitioner.class is overridden to org.jinn.typhoon.process.SimplePartitioner
+2014-08-05 17:05:46 [INFO] Property request.required.acks is overridden to 1
+2014-08-05 17:05:46 [INFO] Property serializer.class is overridden to kafka.serializer.StringEncoder
+2014-08-05 17:05:47 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:05:47 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Topic info for path /brokers/topics/cart_operation_data changed to {"version":1,"partitions":{"1":[0],"0":[0]}}, triggering rebalance
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], begin rebalancing consumer typhoon-worker_jinngm.local-1407229517720-99d0e0f0 try #0
+2014-08-05 17:05:47 [INFO] [ConsumerFetcherManager-1407229517820] Stopping leader finder thread
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0-leader-finder-thread], Shutting down
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0-leader-finder-thread], Stopped 
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0-leader-finder-thread], Shutdown completed
+2014-08-05 17:05:47 [INFO] [ConsumerFetcherManager-1407229517820] Stopping all fetchers
+2014-08-05 17:05:47 [INFO] [ConsumerFetcherManager-1407229517820] All connections stopped
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Cleared all relevant queues for this fetcher
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Releasing partition ownership
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Consumer typhoon-worker_jinngm.local-1407229517720-99d0e0f0 rebalancing the following partitions: ArrayBuffer(0, 1) for topic cart_operation_data with consumers: List(typhoon-worker_jinngm.local-1407229517720-99d0e0f0-0, typhoon-worker_jinngm.local-1407229517720-99d0e0f0-1, typhoon-worker_jinngm.local-1407229517720-99d0e0f0-2, typhoon-worker_jinngm.local-1407229517720-99d0e0f0-3)
+2014-08-05 17:05:47 [WARN] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229517720-99d0e0f0-2 for topic cart_operation_data
+2014-08-05 17:05:47 [WARN] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229517720-99d0e0f0-3 for topic cart_operation_data
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], typhoon-worker_jinngm.local-1407229517720-99d0e0f0-0 attempting to claim partition 0
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], typhoon-worker_jinngm.local-1407229517720-99d0e0f0-1 attempting to claim partition 1
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], typhoon-worker_jinngm.local-1407229517720-99d0e0f0-1 successfully owned partition 1 for topic cart_operation_data
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], typhoon-worker_jinngm.local-1407229517720-99d0e0f0-0 successfully owned partition 0 for topic cart_operation_data
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Updating the cache
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], Consumer typhoon-worker_jinngm.local-1407229517720-99d0e0f0 selected partitions : cart_operation_data:0: fetched offset = -1: consumed offset = -1,cart_operation_data:1: fetched offset = -1: consumed offset = -1
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0-leader-finder-thread], Starting 
+2014-08-05 17:05:47 [INFO] [typhoon-worker_jinngm.local-1407229517720-99d0e0f0], end rebalancing consumer typhoon-worker_jinngm.local-1407229517720-99d0e0f0 try #0
+2014-08-05 17:05:47 [INFO] Verifying properties
+2014-08-05 17:05:47 [INFO] Property client.id is overridden to typhoon-worker
+2014-08-05 17:05:47 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:05:47 [INFO] Property request.timeout.ms is overridden to 30000
+2014-08-05 17:05:47 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:05:47 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:05:47 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:05:47 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:05:48 [WARN] Error while fetching metadata [{TopicMetadata for topic cart_operation_data -> 
+No partition metadata for topic cart_operation_data due to kafka.common.LeaderNotAvailableException}] for topic [cart_operation_data]: class kafka.common.LeaderNotAvailableException 
+2014-08-05 17:05:48 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 1 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:05:48 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:05:48 [INFO] [ConsumerFetcherManager-1407229517820] Added fetcher for partitions ArrayBuffer()
+2014-08-05 17:05:48 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:05:48 [WARN] Error while fetching metadata [{TopicMetadata for topic cart_operation_data -> 
+No partition metadata for topic cart_operation_data due to kafka.common.LeaderNotAvailableException}] for topic [cart_operation_data]: class kafka.common.LeaderNotAvailableException 
+2014-08-05 17:05:48 [ERROR] Failed to collate messages by topic, partition due to: Failed to fetch topic metadata for topic: cart_operation_data
+2014-08-05 17:05:48 [INFO] Back off for 100 ms before retrying send. Remaining retries = 3
+2014-08-05 17:05:48 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 2 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:05:48 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:05:48 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:05:48 [WARN] Error while fetching metadata [{TopicMetadata for topic cart_operation_data -> 
+No partition metadata for topic cart_operation_data due to kafka.common.LeaderNotAvailableException}] for topic [cart_operation_data]: class kafka.common.LeaderNotAvailableException 
+2014-08-05 17:05:48 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 3 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:05:48 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:05:48 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:05:48 [WARN] Error while fetching metadata [{TopicMetadata for topic cart_operation_data -> 
+No partition metadata for topic cart_operation_data due to kafka.common.LeaderNotAvailableException}] for topic [cart_operation_data]: class kafka.common.LeaderNotAvailableException 
+2014-08-05 17:05:48 [ERROR] Failed to collate messages by topic, partition due to: Failed to fetch topic metadata for topic: cart_operation_data
+2014-08-05 17:05:48 [INFO] Back off for 100 ms before retrying send. Remaining retries = 2
+2014-08-05 17:05:48 [INFO] Verifying properties
+2014-08-05 17:05:48 [INFO] Property client.id is overridden to typhoon-worker
+2014-08-05 17:05:48 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:05:48 [INFO] Property request.timeout.ms is overridden to 30000
+2014-08-05 17:05:48 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 1 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:05:48 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:05:48 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 4 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:05:48 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:05:48 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:05:48 [INFO] [ConsumerFetcherManager-1407229517820] Added fetcher for partitions ArrayBuffer()
+2014-08-05 17:05:48 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:05:48 [WARN] Error while fetching metadata [{TopicMetadata for topic cart_operation_data -> 
+No partition metadata for topic cart_operation_data due to kafka.common.LeaderNotAvailableException}] for topic [cart_operation_data]: class kafka.common.LeaderNotAvailableException 
+2014-08-05 17:05:48 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 5 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:05:48 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:05:48 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:05:48 [WARN] Error while fetching metadata [{TopicMetadata for topic cart_operation_data -> 
+No partition metadata for topic cart_operation_data due to kafka.common.LeaderNotAvailableException}] for topic [cart_operation_data]: class kafka.common.LeaderNotAvailableException 
+2014-08-05 17:05:48 [ERROR] Failed to collate messages by topic, partition due to: Failed to fetch topic metadata for topic: cart_operation_data
+2014-08-05 17:05:48 [INFO] Back off for 100 ms before retrying send. Remaining retries = 1
+2014-08-05 17:05:48 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 6 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:05:48 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:05:48 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:05:48 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:05:48 [INFO] Verifying properties
+2014-08-05 17:05:48 [INFO] Property client.id is overridden to typhoon-worker
+2014-08-05 17:05:48 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:05:48 [INFO] Property request.timeout.ms is overridden to 30000
+2014-08-05 17:05:48 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 2 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:05:48 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:05:48 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:05:48 [INFO] [ConsumerFetcherThread-typhoon-worker_jinngm.local-1407229517720-99d0e0f0-0-0], Starting 
+2014-08-05 17:05:48 [INFO] Shutting down producer
+2014-08-05 17:05:48 [INFO] Closing all sync producers
+2014-08-05 17:05:48 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:05:48 [INFO] [ConsumerFetcherManager-1407229517820] Added fetcher for partitions ArrayBuffer([[cart_operation_data,1], initOffset -1 to broker id:0,host:localhost,port:9092] , [[cart_operation_data,0], initOffset -1 to broker id:0,host:localhost,port:9092] )
+2014-08-05 17:06:48 [INFO] Verifying properties
+2014-08-05 17:06:48 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:06:48 [INFO] Property partitioner.class is overridden to org.jinn.typhoon.process.SimplePartitioner
+2014-08-05 17:06:48 [INFO] Property request.required.acks is overridden to 1
+2014-08-05 17:06:48 [INFO] Property serializer.class is overridden to kafka.serializer.StringEncoder
+2014-08-05 17:06:48 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:06:48 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:06:48 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:06:48 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:06:48 [INFO] Shutting down producer
+2014-08-05 17:06:48 [INFO] Closing all sync producers
+2014-08-05 17:06:48 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:08:17 [INFO] Verifying properties
+2014-08-05 17:08:17 [INFO] Property auto.commit.interval.ms is overridden to 2000
+2014-08-05 17:08:17 [INFO] Property group.id is overridden to typhoon-worker
+2014-08-05 17:08:17 [INFO] Property zookeeper.connect is overridden to 127.0.0.1:2181
+2014-08-05 17:08:17 [INFO] Property zookeeper.session.timeout.ms is overridden to 500
+2014-08-05 17:08:17 [INFO] Property zookeeper.sync.time.ms is overridden to 200
+2014-08-05 17:08:17 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], Connecting to zookeeper instance at 127.0.0.1:2181
+2014-08-05 17:08:17 [INFO] Starting ZkClient event thread.
+2014-08-05 17:08:17 [INFO] Client environment:zookeeper.version=3.3.3-1203054, built on 11/17/2011 05:47 GMT
+2014-08-05 17:08:17 [INFO] Client environment:host.name=localhost
+2014-08-05 17:08:17 [INFO] Client environment:java.version=1.6.0_65
+2014-08-05 17:08:17 [INFO] Client environment:java.vendor=Apple Inc.
+2014-08-05 17:08:17 [INFO] Client environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2014-08-05 17:08:17 [INFO] Client environment:java.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Users/gumingcn/dev/gitcode/typhoon/target/classes:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.2.3/jackson-jaxrs-json-provider-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.2.3/jackson-jaxrs-base-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.2.3/jackson-module-jaxb-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-cluster_2.10/2.3.2/akka-cluster_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-remote_2.10/2.3.2/akka-remote_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-actor_2.10/2.3.2/akka-actor_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/config/1.2.0/config-1.2.0.jar:/Users/gumingcn/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar:/Users/gumingcn/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/gumingcn/.m2/repository/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-testkit_2.10/2.3.2/akka-testkit_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-kernel_2.10/2.3.2/akka-kernel_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/redis4j/redis4j/0.1.0/redis4j-0.1.0.jar:/Users/gumingcn/.m2/repository/commons-lang/commons-lang/2.3/commons-lang-2.3.jar:/Users/gumingcn/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/gumingcn/.m2/repository/commons-pool/commons-pool/1.3/commons-pool-1.3.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/gumingcn/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/gumingcn/.m2/repository/redis/clients/jedis/2.2.1/jedis-2.2.1.jar:/Users/gumingcn/.m2/repository/commons-io/commons-io/1.2/commons-io-1.2.jar:/Users/gumingcn/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/Users/gumingcn/.m2/repository/com/rabbitmq/amqp-client/3.3.1/amqp-client-3.3.1.jar:/Users/gumingcn/.m2/repository/kafka/kafka-java/0.8.1.1/kafka-java-0.8.1.1.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-web/2.2.0/metrics-web-2.2.0.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/gumingcn/.m2/repository/org/apache/zookeeper/zookeeper/3.3.4/zookeeper-3.3.4.jar:/Users/gumingcn/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/gumingcn/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/gumingcn/.m2/repository/javax/jms/jms/1.1/jms-1.1.jar:/Users/gumingcn/.m2/repository/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar:/Users/gumingcn/.m2/repository/com/sun/jmx/jmxri/1.2.1/jmxri-1.2.1.jar:/Users/gumingcn/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/gumingcn/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar:/Users/gumingcn/.m2/repository/com/zkClient/zkClient/0.3/zkClient-0.3.jar:/Users/gumingcn/.m2/repository/net/sf/ehcache/ehcache-core/2.5.2/ehcache-core-2.5.2.jar:/Applications/IntelliJ IDEA 13.app/lib/idea_rt.jar
+2014-08-05 17:08:17 [INFO] Client environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2014-08-05 17:08:17 [INFO] Client environment:java.io.tmpdir=/var/folders/gk/rsjjycnj2w35gqh4h8s48gs40000gn/T/
+2014-08-05 17:08:17 [INFO] Client environment:java.compiler=<NA>
+2014-08-05 17:08:17 [INFO] Client environment:os.name=Mac OS X
+2014-08-05 17:08:17 [INFO] Client environment:os.arch=x86_64
+2014-08-05 17:08:17 [INFO] Client environment:os.version=10.9.4
+2014-08-05 17:08:17 [INFO] Client environment:user.name=gumingcn
+2014-08-05 17:08:17 [INFO] Client environment:user.home=/Users/gumingcn
+2014-08-05 17:08:17 [INFO] Client environment:user.dir=/Users/gumingcn/dev/gitcode/typhoon
+2014-08-05 17:08:17 [INFO] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=500 watcher=org.I0Itec.zkclient.ZkClient@238b8914
+2014-08-05 17:08:17 [INFO] Opening socket connection to server /127.0.0.1:2181
+2014-08-05 17:08:17 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2014-08-05 17:08:17 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x147a5633b2f0005, negotiated timeout = 6000
+2014-08-05 17:08:17 [INFO] zookeeper state changed (SyncConnected)
+2014-08-05 17:08:17 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], starting auto committer every 2000 ms
+2014-08-05 17:08:18 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], begin registering consumer typhoon-worker_jinngm.local-1407229697648-58a7bce4 in ZK
+2014-08-05 17:08:18 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], end registering consumer typhoon-worker_jinngm.local-1407229697648-58a7bce4 in ZK
+2014-08-05 17:08:18 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], starting watcher executor thread for consumer typhoon-worker_jinngm.local-1407229697648-58a7bce4
+2014-08-05 17:08:18 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], begin rebalancing consumer typhoon-worker_jinngm.local-1407229697648-58a7bce4 try #0
+2014-08-05 17:08:19 [INFO] [ConsumerFetcherManager-1407229697743] Stopping leader finder thread
+2014-08-05 17:08:19 [INFO] [ConsumerFetcherManager-1407229697743] Stopping all fetchers
+2014-08-05 17:08:19 [INFO] [ConsumerFetcherManager-1407229697743] All connections stopped
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], Cleared all relevant queues for this fetcher
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], Releasing partition ownership
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], Consumer typhoon-worker_jinngm.local-1407229697648-58a7bce4 rebalancing the following partitions: ArrayBuffer(0, 1) for topic cart_operation_data with consumers: List(typhoon-worker_jinngm.local-1407229697648-58a7bce4-0, typhoon-worker_jinngm.local-1407229697648-58a7bce4-1, typhoon-worker_jinngm.local-1407229697648-58a7bce4-2, typhoon-worker_jinngm.local-1407229697648-58a7bce4-3)
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], typhoon-worker_jinngm.local-1407229697648-58a7bce4-0 attempting to claim partition 0
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], typhoon-worker_jinngm.local-1407229697648-58a7bce4-1 attempting to claim partition 1
+2014-08-05 17:08:19 [WARN] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229697648-58a7bce4-2 for topic cart_operation_data
+2014-08-05 17:08:19 [WARN] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229697648-58a7bce4-3 for topic cart_operation_data
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], typhoon-worker_jinngm.local-1407229697648-58a7bce4-1 successfully owned partition 1 for topic cart_operation_data
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], typhoon-worker_jinngm.local-1407229697648-58a7bce4-0 successfully owned partition 0 for topic cart_operation_data
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], Updating the cache
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], Consumer typhoon-worker_jinngm.local-1407229697648-58a7bce4 selected partitions : cart_operation_data:0: fetched offset = 20: consumed offset = 20,cart_operation_data:1: fetched offset = 0: consumed offset = 0
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4-leader-finder-thread], Starting 
+2014-08-05 17:08:19 [INFO] [typhoon-worker_jinngm.local-1407229697648-58a7bce4], end rebalancing consumer typhoon-worker_jinngm.local-1407229697648-58a7bce4 try #0
+2014-08-05 17:08:19 [INFO] Verifying properties
+2014-08-05 17:08:19 [INFO] Property client.id is overridden to typhoon-worker
+2014-08-05 17:08:19 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:08:19 [INFO] Property request.timeout.ms is overridden to 30000
+2014-08-05 17:08:19 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:08:19 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:08:19 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:08:19 [INFO] [ConsumerFetcherThread-typhoon-worker_jinngm.local-1407229697648-58a7bce4-0-0], Starting 
+2014-08-05 17:08:19 [INFO] [ConsumerFetcherManager-1407229697743] Added fetcher for partitions ArrayBuffer([[cart_operation_data,1], initOffset 0 to broker id:0,host:localhost,port:9092] , [[cart_operation_data,0], initOffset 20 to broker id:0,host:localhost,port:9092] )
+2014-08-05 17:08:25 [INFO] Verifying properties
+2014-08-05 17:08:25 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:08:25 [INFO] Property partitioner.class is overridden to org.jinn.typhoon.process.SimplePartitioner
+2014-08-05 17:08:25 [INFO] Property request.required.acks is overridden to 1
+2014-08-05 17:08:25 [INFO] Property serializer.class is overridden to kafka.serializer.StringEncoder
+2014-08-05 17:08:26 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:08:26 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:08:26 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:08:26 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:08:26 [INFO] Shutting down producer
+2014-08-05 17:08:26 [INFO] Closing all sync producers
+2014-08-05 17:08:26 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:10:03 [INFO] Verifying properties
+2014-08-05 17:10:03 [INFO] Property auto.commit.interval.ms is overridden to 2000
+2014-08-05 17:10:03 [INFO] Property group.id is overridden to typhoon-worker
+2014-08-05 17:10:03 [INFO] Property zookeeper.connect is overridden to 127.0.0.1:2181
+2014-08-05 17:10:03 [INFO] Property zookeeper.session.timeout.ms is overridden to 500
+2014-08-05 17:10:03 [INFO] Property zookeeper.sync.time.ms is overridden to 200
+2014-08-05 17:10:03 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Connecting to zookeeper instance at 127.0.0.1:2181
+2014-08-05 17:10:03 [INFO] Starting ZkClient event thread.
+2014-08-05 17:10:03 [INFO] Client environment:zookeeper.version=3.3.3-1203054, built on 11/17/2011 05:47 GMT
+2014-08-05 17:10:03 [INFO] Client environment:host.name=localhost
+2014-08-05 17:10:03 [INFO] Client environment:java.version=1.6.0_65
+2014-08-05 17:10:03 [INFO] Client environment:java.vendor=Apple Inc.
+2014-08-05 17:10:03 [INFO] Client environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2014-08-05 17:10:03 [INFO] Client environment:java.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Users/gumingcn/dev/gitcode/typhoon/target/classes:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.2.3/jackson-jaxrs-json-provider-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.2.3/jackson-jaxrs-base-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.2.3/jackson-module-jaxb-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-cluster_2.10/2.3.2/akka-cluster_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-remote_2.10/2.3.2/akka-remote_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-actor_2.10/2.3.2/akka-actor_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/config/1.2.0/config-1.2.0.jar:/Users/gumingcn/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar:/Users/gumingcn/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/gumingcn/.m2/repository/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-testkit_2.10/2.3.2/akka-testkit_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-kernel_2.10/2.3.2/akka-kernel_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/redis4j/redis4j/0.1.0/redis4j-0.1.0.jar:/Users/gumingcn/.m2/repository/commons-lang/commons-lang/2.3/commons-lang-2.3.jar:/Users/gumingcn/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/gumingcn/.m2/repository/commons-pool/commons-pool/1.3/commons-pool-1.3.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/gumingcn/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/gumingcn/.m2/repository/redis/clients/jedis/2.2.1/jedis-2.2.1.jar:/Users/gumingcn/.m2/repository/commons-io/commons-io/1.2/commons-io-1.2.jar:/Users/gumingcn/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/Users/gumingcn/.m2/repository/com/rabbitmq/amqp-client/3.3.1/amqp-client-3.3.1.jar:/Users/gumingcn/.m2/repository/kafka/kafka-java/0.8.1.1/kafka-java-0.8.1.1.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-web/2.2.0/metrics-web-2.2.0.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/gumingcn/.m2/repository/org/apache/zookeeper/zookeeper/3.3.4/zookeeper-3.3.4.jar:/Users/gumingcn/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/gumingcn/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/gumingcn/.m2/repository/javax/jms/jms/1.1/jms-1.1.jar:/Users/gumingcn/.m2/repository/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar:/Users/gumingcn/.m2/repository/com/sun/jmx/jmxri/1.2.1/jmxri-1.2.1.jar:/Users/gumingcn/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/gumingcn/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar:/Users/gumingcn/.m2/repository/com/zkClient/zkClient/0.3/zkClient-0.3.jar:/Users/gumingcn/.m2/repository/net/sf/ehcache/ehcache-core/2.5.2/ehcache-core-2.5.2.jar:/Applications/IntelliJ IDEA 13.app/lib/idea_rt.jar
+2014-08-05 17:10:03 [INFO] Client environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2014-08-05 17:10:03 [INFO] Client environment:java.io.tmpdir=/var/folders/gk/rsjjycnj2w35gqh4h8s48gs40000gn/T/
+2014-08-05 17:10:03 [INFO] Client environment:java.compiler=<NA>
+2014-08-05 17:10:03 [INFO] Client environment:os.name=Mac OS X
+2014-08-05 17:10:03 [INFO] Client environment:os.arch=x86_64
+2014-08-05 17:10:03 [INFO] Client environment:os.version=10.9.4
+2014-08-05 17:10:03 [INFO] Client environment:user.name=gumingcn
+2014-08-05 17:10:03 [INFO] Client environment:user.home=/Users/gumingcn
+2014-08-05 17:10:03 [INFO] Client environment:user.dir=/Users/gumingcn/dev/gitcode/typhoon
+2014-08-05 17:10:03 [INFO] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=500 watcher=org.I0Itec.zkclient.ZkClient@6fe78c96
+2014-08-05 17:10:03 [INFO] Opening socket connection to server /127.0.0.1:2181
+2014-08-05 17:10:03 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2014-08-05 17:10:03 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x147a5633b2f0006, negotiated timeout = 6000
+2014-08-05 17:10:03 [INFO] zookeeper state changed (SyncConnected)
+2014-08-05 17:10:04 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], starting auto committer every 2000 ms
+2014-08-05 17:10:04 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], begin registering consumer typhoon-worker_jinngm.local-1407229803880-22192c20 in ZK
+2014-08-05 17:10:04 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], end registering consumer typhoon-worker_jinngm.local-1407229803880-22192c20 in ZK
+2014-08-05 17:10:04 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], starting watcher executor thread for consumer typhoon-worker_jinngm.local-1407229803880-22192c20
+2014-08-05 17:10:04 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], begin rebalancing consumer typhoon-worker_jinngm.local-1407229803880-22192c20 try #0
+2014-08-05 17:10:05 [INFO] [ConsumerFetcherManager-1407229803983] Stopping leader finder thread
+2014-08-05 17:10:05 [INFO] [ConsumerFetcherManager-1407229803983] Stopping all fetchers
+2014-08-05 17:10:05 [INFO] [ConsumerFetcherManager-1407229803983] All connections stopped
+2014-08-05 17:10:05 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Cleared all relevant queues for this fetcher
+2014-08-05 17:10:05 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:10:05 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:10:05 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Releasing partition ownership
+2014-08-05 17:10:05 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Consumer typhoon-worker_jinngm.local-1407229803880-22192c20 rebalancing the following partitions: ArrayBuffer(0, 1) for topic cart_operation_data with consumers: List(typhoon-worker_jinngm.local-1407229697648-58a7bce4-0, typhoon-worker_jinngm.local-1407229697648-58a7bce4-1, typhoon-worker_jinngm.local-1407229697648-58a7bce4-2, typhoon-worker_jinngm.local-1407229697648-58a7bce4-3, typhoon-worker_jinngm.local-1407229803880-22192c20-0, typhoon-worker_jinngm.local-1407229803880-22192c20-1, typhoon-worker_jinngm.local-1407229803880-22192c20-2, typhoon-worker_jinngm.local-1407229803880-22192c20-3)
+2014-08-05 17:10:05 [WARN] [typhoon-worker_jinngm.local-1407229803880-22192c20], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229803880-22192c20-3 for topic cart_operation_data
+2014-08-05 17:10:05 [WARN] [typhoon-worker_jinngm.local-1407229803880-22192c20], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229803880-22192c20-0 for topic cart_operation_data
+2014-08-05 17:10:05 [WARN] [typhoon-worker_jinngm.local-1407229803880-22192c20], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229803880-22192c20-1 for topic cart_operation_data
+2014-08-05 17:10:05 [WARN] [typhoon-worker_jinngm.local-1407229803880-22192c20], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229803880-22192c20-2 for topic cart_operation_data
+2014-08-05 17:10:05 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Updating the cache
+2014-08-05 17:10:05 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Consumer typhoon-worker_jinngm.local-1407229803880-22192c20 selected partitions : 
+2014-08-05 17:10:05 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20-leader-finder-thread], Starting 
+2014-08-05 17:10:05 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], end rebalancing consumer typhoon-worker_jinngm.local-1407229803880-22192c20 try #0
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], begin rebalancing consumer typhoon-worker_jinngm.local-1407229803880-22192c20 try #0
+2014-08-05 17:10:06 [INFO] [ConsumerFetcherManager-1407229803983] Stopping leader finder thread
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20-leader-finder-thread], Shutting down
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20-leader-finder-thread], Stopped 
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20-leader-finder-thread], Shutdown completed
+2014-08-05 17:10:06 [INFO] [ConsumerFetcherManager-1407229803983] Stopping all fetchers
+2014-08-05 17:10:06 [INFO] [ConsumerFetcherManager-1407229803983] All connections stopped
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Cleared all relevant queues for this fetcher
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Releasing partition ownership
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Consumer typhoon-worker_jinngm.local-1407229803880-22192c20 rebalancing the following partitions: ArrayBuffer(0, 1) for topic cart_operation_data with consumers: List(typhoon-worker_jinngm.local-1407229803880-22192c20-0, typhoon-worker_jinngm.local-1407229803880-22192c20-1, typhoon-worker_jinngm.local-1407229803880-22192c20-2, typhoon-worker_jinngm.local-1407229803880-22192c20-3)
+2014-08-05 17:10:06 [WARN] [typhoon-worker_jinngm.local-1407229803880-22192c20], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229803880-22192c20-3 for topic cart_operation_data
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], typhoon-worker_jinngm.local-1407229803880-22192c20-0 attempting to claim partition 0
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], typhoon-worker_jinngm.local-1407229803880-22192c20-1 attempting to claim partition 1
+2014-08-05 17:10:06 [WARN] [typhoon-worker_jinngm.local-1407229803880-22192c20], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407229803880-22192c20-2 for topic cart_operation_data
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], typhoon-worker_jinngm.local-1407229803880-22192c20-1 successfully owned partition 1 for topic cart_operation_data
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], typhoon-worker_jinngm.local-1407229803880-22192c20-0 successfully owned partition 0 for topic cart_operation_data
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Updating the cache
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], Consumer typhoon-worker_jinngm.local-1407229803880-22192c20 selected partitions : cart_operation_data:0: fetched offset = 30: consumed offset = 30,cart_operation_data:1: fetched offset = 0: consumed offset = 0
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20-leader-finder-thread], Starting 
+2014-08-05 17:10:06 [INFO] [typhoon-worker_jinngm.local-1407229803880-22192c20], end rebalancing consumer typhoon-worker_jinngm.local-1407229803880-22192c20 try #0
+2014-08-05 17:10:06 [INFO] Verifying properties
+2014-08-05 17:10:06 [INFO] Property client.id is overridden to typhoon-worker
+2014-08-05 17:10:06 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:10:06 [INFO] Property request.timeout.ms is overridden to 30000
+2014-08-05 17:10:06 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:10:06 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:10:06 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:10:06 [INFO] [ConsumerFetcherThread-typhoon-worker_jinngm.local-1407229803880-22192c20-0-0], Starting 
+2014-08-05 17:10:06 [INFO] [ConsumerFetcherManager-1407229803983] Added fetcher for partitions ArrayBuffer([[cart_operation_data,1], initOffset 0 to broker id:0,host:localhost,port:9092] , [[cart_operation_data,0], initOffset 30 to broker id:0,host:localhost,port:9092] )
+2014-08-05 17:11:07 [INFO] Verifying properties
+2014-08-05 17:11:07 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:11:07 [INFO] Property partitioner.class is overridden to org.jinn.typhoon.process.SimplePartitioner
+2014-08-05 17:11:07 [INFO] Property request.required.acks is overridden to 1
+2014-08-05 17:11:07 [INFO] Property serializer.class is overridden to kafka.serializer.StringEncoder
+2014-08-05 17:11:08 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:11:08 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:11:08 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:11:08 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:11:08 [INFO] Shutting down producer
+2014-08-05 17:11:08 [INFO] Closing all sync producers
+2014-08-05 17:11:08 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:14:24 [INFO] Verifying properties
+2014-08-05 17:14:24 [INFO] Property auto.commit.interval.ms is overridden to 2000
+2014-08-05 17:14:24 [INFO] Property group.id is overridden to typhoon-worker
+2014-08-05 17:14:24 [INFO] Property zookeeper.connect is overridden to 127.0.0.1:2181
+2014-08-05 17:14:24 [INFO] Property zookeeper.session.timeout.ms is overridden to 500
+2014-08-05 17:14:24 [INFO] Property zookeeper.sync.time.ms is overridden to 200
+2014-08-05 17:14:24 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Connecting to zookeeper instance at 127.0.0.1:2181
+2014-08-05 17:14:24 [INFO] Starting ZkClient event thread.
+2014-08-05 17:14:24 [INFO] Client environment:zookeeper.version=3.3.3-1203054, built on 11/17/2011 05:47 GMT
+2014-08-05 17:14:24 [INFO] Client environment:host.name=localhost
+2014-08-05 17:14:24 [INFO] Client environment:java.version=1.6.0_65
+2014-08-05 17:14:24 [INFO] Client environment:java.vendor=Apple Inc.
+2014-08-05 17:14:24 [INFO] Client environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2014-08-05 17:14:24 [INFO] Client environment:java.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Users/gumingcn/dev/gitcode/typhoon/target/classes:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.2.3/jackson-jaxrs-json-provider-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.2.3/jackson-jaxrs-base-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.2.3/jackson-module-jaxb-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-cluster_2.10/2.3.2/akka-cluster_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-remote_2.10/2.3.2/akka-remote_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-actor_2.10/2.3.2/akka-actor_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/config/1.2.0/config-1.2.0.jar:/Users/gumingcn/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar:/Users/gumingcn/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/gumingcn/.m2/repository/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-testkit_2.10/2.3.2/akka-testkit_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-kernel_2.10/2.3.2/akka-kernel_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/redis4j/redis4j/0.1.0/redis4j-0.1.0.jar:/Users/gumingcn/.m2/repository/commons-lang/commons-lang/2.3/commons-lang-2.3.jar:/Users/gumingcn/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/gumingcn/.m2/repository/commons-pool/commons-pool/1.3/commons-pool-1.3.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/gumingcn/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/gumingcn/.m2/repository/redis/clients/jedis/2.2.1/jedis-2.2.1.jar:/Users/gumingcn/.m2/repository/commons-io/commons-io/1.2/commons-io-1.2.jar:/Users/gumingcn/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/Users/gumingcn/.m2/repository/com/rabbitmq/amqp-client/3.3.1/amqp-client-3.3.1.jar:/Users/gumingcn/.m2/repository/kafka/kafka-java/0.8.1.1/kafka-java-0.8.1.1.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-web/2.2.0/metrics-web-2.2.0.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/gumingcn/.m2/repository/org/apache/zookeeper/zookeeper/3.3.4/zookeeper-3.3.4.jar:/Users/gumingcn/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/gumingcn/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/gumingcn/.m2/repository/javax/jms/jms/1.1/jms-1.1.jar:/Users/gumingcn/.m2/repository/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar:/Users/gumingcn/.m2/repository/com/sun/jmx/jmxri/1.2.1/jmxri-1.2.1.jar:/Users/gumingcn/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/gumingcn/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar:/Users/gumingcn/.m2/repository/com/zkClient/zkClient/0.3/zkClient-0.3.jar:/Users/gumingcn/.m2/repository/net/sf/ehcache/ehcache-core/2.5.2/ehcache-core-2.5.2.jar:/Applications/IntelliJ IDEA 13.app/lib/idea_rt.jar
+2014-08-05 17:14:24 [INFO] Client environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2014-08-05 17:14:24 [INFO] Client environment:java.io.tmpdir=/var/folders/gk/rsjjycnj2w35gqh4h8s48gs40000gn/T/
+2014-08-05 17:14:24 [INFO] Client environment:java.compiler=<NA>
+2014-08-05 17:14:24 [INFO] Client environment:os.name=Mac OS X
+2014-08-05 17:14:24 [INFO] Client environment:os.arch=x86_64
+2014-08-05 17:14:24 [INFO] Client environment:os.version=10.9.4
+2014-08-05 17:14:24 [INFO] Client environment:user.name=gumingcn
+2014-08-05 17:14:24 [INFO] Client environment:user.home=/Users/gumingcn
+2014-08-05 17:14:24 [INFO] Client environment:user.dir=/Users/gumingcn/dev/gitcode/typhoon
+2014-08-05 17:14:24 [INFO] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=500 watcher=org.I0Itec.zkclient.ZkClient@18330bf
+2014-08-05 17:14:24 [INFO] Opening socket connection to server /127.0.0.1:2181
+2014-08-05 17:14:24 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2014-08-05 17:14:24 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x147a5633b2f0007, negotiated timeout = 6000
+2014-08-05 17:14:24 [INFO] zookeeper state changed (SyncConnected)
+2014-08-05 17:14:24 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], starting auto committer every 2000 ms
+2014-08-05 17:14:25 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], begin registering consumer typhoon-worker_jinngm.local-1407230064803-3049c641 in ZK
+2014-08-05 17:14:25 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], end registering consumer typhoon-worker_jinngm.local-1407230064803-3049c641 in ZK
+2014-08-05 17:14:25 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], starting watcher executor thread for consumer typhoon-worker_jinngm.local-1407230064803-3049c641
+2014-08-05 17:14:25 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], begin rebalancing consumer typhoon-worker_jinngm.local-1407230064803-3049c641 try #0
+2014-08-05 17:14:26 [INFO] [ConsumerFetcherManager-1407230064897] Stopping leader finder thread
+2014-08-05 17:14:26 [INFO] [ConsumerFetcherManager-1407230064897] Stopping all fetchers
+2014-08-05 17:14:26 [INFO] [ConsumerFetcherManager-1407230064897] All connections stopped
+2014-08-05 17:14:26 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Cleared all relevant queues for this fetcher
+2014-08-05 17:14:26 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:14:26 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:14:26 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Releasing partition ownership
+2014-08-05 17:14:26 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Consumer typhoon-worker_jinngm.local-1407230064803-3049c641 rebalancing the following partitions: ArrayBuffer(0, 1) for topic cart_operation_data with consumers: List(typhoon-worker_jinngm.local-1407229803880-22192c20-0, typhoon-worker_jinngm.local-1407229803880-22192c20-1, typhoon-worker_jinngm.local-1407229803880-22192c20-2, typhoon-worker_jinngm.local-1407229803880-22192c20-3, typhoon-worker_jinngm.local-1407230064803-3049c641-0, typhoon-worker_jinngm.local-1407230064803-3049c641-1, typhoon-worker_jinngm.local-1407230064803-3049c641-2, typhoon-worker_jinngm.local-1407230064803-3049c641-3)
+2014-08-05 17:14:26 [WARN] [typhoon-worker_jinngm.local-1407230064803-3049c641], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407230064803-3049c641-0 for topic cart_operation_data
+2014-08-05 17:14:26 [WARN] [typhoon-worker_jinngm.local-1407230064803-3049c641], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407230064803-3049c641-1 for topic cart_operation_data
+2014-08-05 17:14:26 [WARN] [typhoon-worker_jinngm.local-1407230064803-3049c641], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407230064803-3049c641-2 for topic cart_operation_data
+2014-08-05 17:14:26 [WARN] [typhoon-worker_jinngm.local-1407230064803-3049c641], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407230064803-3049c641-3 for topic cart_operation_data
+2014-08-05 17:14:26 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Updating the cache
+2014-08-05 17:14:26 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Consumer typhoon-worker_jinngm.local-1407230064803-3049c641 selected partitions : 
+2014-08-05 17:14:26 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641-leader-finder-thread], Starting 
+2014-08-05 17:14:26 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], end rebalancing consumer typhoon-worker_jinngm.local-1407230064803-3049c641 try #0
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], begin rebalancing consumer typhoon-worker_jinngm.local-1407230064803-3049c641 try #0
+2014-08-05 17:14:27 [INFO] [ConsumerFetcherManager-1407230064897] Stopping leader finder thread
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641-leader-finder-thread], Shutting down
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641-leader-finder-thread], Stopped 
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641-leader-finder-thread], Shutdown completed
+2014-08-05 17:14:27 [INFO] [ConsumerFetcherManager-1407230064897] Stopping all fetchers
+2014-08-05 17:14:27 [INFO] [ConsumerFetcherManager-1407230064897] All connections stopped
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Cleared all relevant queues for this fetcher
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Releasing partition ownership
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Consumer typhoon-worker_jinngm.local-1407230064803-3049c641 rebalancing the following partitions: ArrayBuffer(0, 1) for topic cart_operation_data with consumers: List(typhoon-worker_jinngm.local-1407230064803-3049c641-0, typhoon-worker_jinngm.local-1407230064803-3049c641-1, typhoon-worker_jinngm.local-1407230064803-3049c641-2, typhoon-worker_jinngm.local-1407230064803-3049c641-3)
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], typhoon-worker_jinngm.local-1407230064803-3049c641-0 attempting to claim partition 0
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], typhoon-worker_jinngm.local-1407230064803-3049c641-1 attempting to claim partition 1
+2014-08-05 17:14:27 [WARN] [typhoon-worker_jinngm.local-1407230064803-3049c641], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407230064803-3049c641-2 for topic cart_operation_data
+2014-08-05 17:14:27 [WARN] [typhoon-worker_jinngm.local-1407230064803-3049c641], No broker partitions consumed by consumer thread typhoon-worker_jinngm.local-1407230064803-3049c641-3 for topic cart_operation_data
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], typhoon-worker_jinngm.local-1407230064803-3049c641-1 successfully owned partition 1 for topic cart_operation_data
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], typhoon-worker_jinngm.local-1407230064803-3049c641-0 successfully owned partition 0 for topic cart_operation_data
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Updating the cache
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], Consumer typhoon-worker_jinngm.local-1407230064803-3049c641 selected partitions : cart_operation_data:0: fetched offset = 40: consumed offset = 40,cart_operation_data:1: fetched offset = 0: consumed offset = 0
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641-leader-finder-thread], Starting 
+2014-08-05 17:14:27 [INFO] [typhoon-worker_jinngm.local-1407230064803-3049c641], end rebalancing consumer typhoon-worker_jinngm.local-1407230064803-3049c641 try #0
+2014-08-05 17:14:27 [INFO] Verifying properties
+2014-08-05 17:14:27 [INFO] Property client.id is overridden to typhoon-worker
+2014-08-05 17:14:27 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:14:27 [INFO] Property request.timeout.ms is overridden to 30000
+2014-08-05 17:14:27 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:14:27 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:14:27 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:14:27 [INFO] [ConsumerFetcherThread-typhoon-worker_jinngm.local-1407230064803-3049c641-0-0], Starting 
+2014-08-05 17:14:27 [INFO] [ConsumerFetcherManager-1407230064897] Added fetcher for partitions ArrayBuffer([[cart_operation_data,1], initOffset 0 to broker id:0,host:localhost,port:9092] , [[cart_operation_data,0], initOffset 40 to broker id:0,host:localhost,port:9092] )
+2014-08-05 17:14:42 [INFO] Verifying properties
+2014-08-05 17:14:42 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:14:42 [INFO] Property partitioner.class is overridden to org.jinn.typhoon.process.SimplePartitioner
+2014-08-05 17:14:42 [INFO] Property request.required.acks is overridden to 1
+2014-08-05 17:14:42 [INFO] Property serializer.class is overridden to kafka.serializer.StringEncoder
+2014-08-05 17:14:42 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:14:42 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:14:42 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:14:42 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:14:42 [INFO] Shutting down producer
+2014-08-05 17:14:42 [INFO] Closing all sync producers
+2014-08-05 17:14:42 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:20:08 [INFO] Verifying properties
+2014-08-05 17:20:08 [INFO] Property auto.commit.interval.ms is overridden to 2000
+2014-08-05 17:20:08 [INFO] Property group.id is overridden to typhoon-worker
+2014-08-05 17:20:08 [INFO] Property zookeeper.connect is overridden to 127.0.0.1:2181
+2014-08-05 17:20:08 [INFO] Property zookeeper.session.timeout.ms is overridden to 500
+2014-08-05 17:20:08 [INFO] Property zookeeper.sync.time.ms is overridden to 200
+2014-08-05 17:20:08 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], Connecting to zookeeper instance at 127.0.0.1:2181
+2014-08-05 17:20:08 [INFO] Starting ZkClient event thread.
+2014-08-05 17:20:08 [INFO] Client environment:zookeeper.version=3.3.3-1203054, built on 11/17/2011 05:47 GMT
+2014-08-05 17:20:08 [INFO] Client environment:host.name=127.0.0.1
+2014-08-05 17:20:08 [INFO] Client environment:java.version=1.6.0_65
+2014-08-05 17:20:08 [INFO] Client environment:java.vendor=Apple Inc.
+2014-08-05 17:20:08 [INFO] Client environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2014-08-05 17:20:08 [INFO] Client environment:java.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Users/gumingcn/dev/gitcode/typhoon/target/classes:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.2.3/jackson-jaxrs-json-provider-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.2.3/jackson-jaxrs-base-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.2.3/jackson-module-jaxb-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-cluster_2.10/2.3.2/akka-cluster_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-remote_2.10/2.3.2/akka-remote_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-actor_2.10/2.3.2/akka-actor_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/config/1.2.0/config-1.2.0.jar:/Users/gumingcn/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar:/Users/gumingcn/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/gumingcn/.m2/repository/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-testkit_2.10/2.3.2/akka-testkit_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-kernel_2.10/2.3.2/akka-kernel_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/redis4j/redis4j/0.1.0/redis4j-0.1.0.jar:/Users/gumingcn/.m2/repository/commons-lang/commons-lang/2.3/commons-lang-2.3.jar:/Users/gumingcn/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/gumingcn/.m2/repository/commons-pool/commons-pool/1.3/commons-pool-1.3.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/gumingcn/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/gumingcn/.m2/repository/redis/clients/jedis/2.2.1/jedis-2.2.1.jar:/Users/gumingcn/.m2/repository/commons-io/commons-io/1.2/commons-io-1.2.jar:/Users/gumingcn/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/Users/gumingcn/.m2/repository/com/rabbitmq/amqp-client/3.3.1/amqp-client-3.3.1.jar:/Users/gumingcn/.m2/repository/kafka/kafka-java/0.8.1.1/kafka-java-0.8.1.1.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-web/2.2.0/metrics-web-2.2.0.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/gumingcn/.m2/repository/org/apache/zookeeper/zookeeper/3.3.4/zookeeper-3.3.4.jar:/Users/gumingcn/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/gumingcn/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/gumingcn/.m2/repository/javax/jms/jms/1.1/jms-1.1.jar:/Users/gumingcn/.m2/repository/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar:/Users/gumingcn/.m2/repository/com/sun/jmx/jmxri/1.2.1/jmxri-1.2.1.jar:/Users/gumingcn/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/gumingcn/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar:/Users/gumingcn/.m2/repository/com/zkClient/zkClient/0.3/zkClient-0.3.jar:/Users/gumingcn/.m2/repository/net/sf/ehcache/ehcache-core/2.5.2/ehcache-core-2.5.2.jar:/Applications/IntelliJ IDEA 13.app/lib/idea_rt.jar
+2014-08-05 17:20:08 [INFO] Client environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2014-08-05 17:20:08 [INFO] Client environment:java.io.tmpdir=/var/folders/gk/rsjjycnj2w35gqh4h8s48gs40000gn/T/
+2014-08-05 17:20:08 [INFO] Client environment:java.compiler=<NA>
+2014-08-05 17:20:08 [INFO] Client environment:os.name=Mac OS X
+2014-08-05 17:20:08 [INFO] Client environment:os.arch=x86_64
+2014-08-05 17:20:08 [INFO] Client environment:os.version=10.9.4
+2014-08-05 17:20:08 [INFO] Client environment:user.name=gumingcn
+2014-08-05 17:20:08 [INFO] Client environment:user.home=/Users/gumingcn
+2014-08-05 17:20:08 [INFO] Client environment:user.dir=/Users/gumingcn/dev/gitcode/typhoon
+2014-08-05 17:20:08 [INFO] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=500 watcher=org.I0Itec.zkclient.ZkClient@1f758500
+2014-08-05 17:20:08 [INFO] Opening socket connection to server /127.0.0.1:2181
+2014-08-05 17:20:08 [INFO] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2014-08-05 17:20:08 [INFO] Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x147a5633b2f0008, negotiated timeout = 6000
+2014-08-05 17:20:08 [INFO] zookeeper state changed (SyncConnected)
+2014-08-05 17:20:08 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], starting auto committer every 2000 ms
+2014-08-05 17:20:09 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], begin registering consumer typhoon-worker_localhost-1407230408508-56afe129 in ZK
+2014-08-05 17:20:09 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], end registering consumer typhoon-worker_localhost-1407230408508-56afe129 in ZK
+2014-08-05 17:20:09 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], starting watcher executor thread for consumer typhoon-worker_localhost-1407230408508-56afe129
+2014-08-05 17:20:09 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], begin rebalancing consumer typhoon-worker_localhost-1407230408508-56afe129 try #0
+2014-08-05 17:20:10 [INFO] [ConsumerFetcherManager-1407230408648] Stopping leader finder thread
+2014-08-05 17:20:10 [INFO] [ConsumerFetcherManager-1407230408648] Stopping all fetchers
+2014-08-05 17:20:10 [INFO] [ConsumerFetcherManager-1407230408648] All connections stopped
+2014-08-05 17:20:10 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], Cleared all relevant queues for this fetcher
+2014-08-05 17:20:10 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:20:10 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:20:10 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], Releasing partition ownership
+2014-08-05 17:20:10 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], Consumer typhoon-worker_localhost-1407230408508-56afe129 rebalancing the following partitions: ArrayBuffer(0, 1) for topic cart_operation_data with consumers: List(typhoon-worker_localhost-1407230408508-56afe129-0, typhoon-worker_localhost-1407230408508-56afe129-1, typhoon-worker_localhost-1407230408508-56afe129-2, typhoon-worker_localhost-1407230408508-56afe129-3)
+2014-08-05 17:20:10 [WARN] [typhoon-worker_localhost-1407230408508-56afe129], No broker partitions consumed by consumer thread typhoon-worker_localhost-1407230408508-56afe129-2 for topic cart_operation_data
+2014-08-05 17:20:10 [WARN] [typhoon-worker_localhost-1407230408508-56afe129], No broker partitions consumed by consumer thread typhoon-worker_localhost-1407230408508-56afe129-3 for topic cart_operation_data
+2014-08-05 17:20:10 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], typhoon-worker_localhost-1407230408508-56afe129-0 attempting to claim partition 0
+2014-08-05 17:20:10 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], typhoon-worker_localhost-1407230408508-56afe129-1 attempting to claim partition 1
+2014-08-05 17:20:10 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], typhoon-worker_localhost-1407230408508-56afe129-1 successfully owned partition 1 for topic cart_operation_data
+2014-08-05 17:20:10 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], typhoon-worker_localhost-1407230408508-56afe129-0 successfully owned partition 0 for topic cart_operation_data
+2014-08-05 17:20:11 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], Updating the cache
+2014-08-05 17:20:11 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], Consumer typhoon-worker_localhost-1407230408508-56afe129 selected partitions : cart_operation_data:0: fetched offset = 50: consumed offset = 50,cart_operation_data:1: fetched offset = 0: consumed offset = 0
+2014-08-05 17:20:11 [INFO] [typhoon-worker_localhost-1407230408508-56afe129-leader-finder-thread], Starting 
+2014-08-05 17:20:11 [INFO] [typhoon-worker_localhost-1407230408508-56afe129], end rebalancing consumer typhoon-worker_localhost-1407230408508-56afe129 try #0
+2014-08-05 17:20:11 [INFO] Verifying properties
+2014-08-05 17:20:11 [INFO] Property client.id is overridden to typhoon-worker
+2014-08-05 17:20:11 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:20:11 [INFO] Property request.timeout.ms is overridden to 30000
+2014-08-05 17:20:11 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:20:11 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:20:11 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:20:11 [INFO] [ConsumerFetcherThread-typhoon-worker_localhost-1407230408508-56afe129-0-0], Starting 
+2014-08-05 17:20:11 [INFO] [ConsumerFetcherManager-1407230408648] Added fetcher for partitions ArrayBuffer([[cart_operation_data,1], initOffset 0 to broker id:0,host:localhost,port:9092] , [[cart_operation_data,0], initOffset 50 to broker id:0,host:localhost,port:9092] )
+2014-08-05 17:20:58 [INFO] Verifying properties
+2014-08-05 17:20:58 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:20:58 [INFO] Property partitioner.class is overridden to org.jinn.typhoon.process.SimplePartitioner
+2014-08-05 17:20:58 [INFO] Property request.required.acks is overridden to 1
+2014-08-05 17:20:58 [INFO] Property serializer.class is overridden to kafka.serializer.StringEncoder
+2014-08-05 17:20:58 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:20:58 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:20:59 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:20:59 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:20:59 [INFO] Shutting down producer
+2014-08-05 17:20:59 [INFO] Closing all sync producers
+2014-08-05 17:20:59 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:21:44 [INFO] Verifying properties
+2014-08-05 17:21:44 [INFO] Property auto.commit.interval.ms is overridden to 2000
+2014-08-05 17:21:44 [INFO] Property group.id is overridden to typhoon-worker
+2014-08-05 17:21:44 [INFO] Property zookeeper.connect is overridden to 127.0.0.1:2181
+2014-08-05 17:21:44 [INFO] Property zookeeper.session.timeout.ms is overridden to 500
+2014-08-05 17:21:44 [INFO] Property zookeeper.sync.time.ms is overridden to 200
+2014-08-05 17:21:44 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], Connecting to zookeeper instance at 127.0.0.1:2181
+2014-08-05 17:21:44 [INFO] Starting ZkClient event thread.
+2014-08-05 17:21:44 [INFO] Client environment:zookeeper.version=3.3.3-1203054, built on 11/17/2011 05:47 GMT
+2014-08-05 17:21:44 [INFO] Client environment:host.name=127.0.0.1
+2014-08-05 17:21:44 [INFO] Client environment:java.version=1.6.0_65
+2014-08-05 17:21:44 [INFO] Client environment:java.vendor=Apple Inc.
+2014-08-05 17:21:44 [INFO] Client environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2014-08-05 17:21:44 [INFO] Client environment:java.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Users/gumingcn/dev/gitcode/typhoon/target/classes:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.2.3/jackson-jaxrs-json-provider-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.2.3/jackson-jaxrs-base-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.2.3/jackson-module-jaxb-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-cluster_2.10/2.3.2/akka-cluster_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-remote_2.10/2.3.2/akka-remote_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-actor_2.10/2.3.2/akka-actor_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/config/1.2.0/config-1.2.0.jar:/Users/gumingcn/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar:/Users/gumingcn/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/gumingcn/.m2/repository/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-testkit_2.10/2.3.2/akka-testkit_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-kernel_2.10/2.3.2/akka-kernel_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/redis4j/redis4j/0.1.0/redis4j-0.1.0.jar:/Users/gumingcn/.m2/repository/commons-lang/commons-lang/2.3/commons-lang-2.3.jar:/Users/gumingcn/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/gumingcn/.m2/repository/commons-pool/commons-pool/1.3/commons-pool-1.3.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/gumingcn/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/gumingcn/.m2/repository/redis/clients/jedis/2.2.1/jedis-2.2.1.jar:/Users/gumingcn/.m2/repository/commons-io/commons-io/1.2/commons-io-1.2.jar:/Users/gumingcn/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/Users/gumingcn/.m2/repository/com/rabbitmq/amqp-client/3.3.1/amqp-client-3.3.1.jar:/Users/gumingcn/.m2/repository/kafka/kafka-java/0.8.1.1/kafka-java-0.8.1.1.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-web/2.2.0/metrics-web-2.2.0.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/gumingcn/.m2/repository/org/apache/zookeeper/zookeeper/3.3.4/zookeeper-3.3.4.jar:/Users/gumingcn/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/gumingcn/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/gumingcn/.m2/repository/javax/jms/jms/1.1/jms-1.1.jar:/Users/gumingcn/.m2/repository/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar:/Users/gumingcn/.m2/repository/com/sun/jmx/jmxri/1.2.1/jmxri-1.2.1.jar:/Users/gumingcn/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/gumingcn/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar:/Users/gumingcn/.m2/repository/com/zkClient/zkClient/0.3/zkClient-0.3.jar:/Users/gumingcn/.m2/repository/net/sf/ehcache/ehcache-core/2.5.2/ehcache-core-2.5.2.jar:/Applications/IntelliJ IDEA 13.app/lib/idea_rt.jar
+2014-08-05 17:21:44 [INFO] Client environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2014-08-05 17:21:44 [INFO] Client environment:java.io.tmpdir=/var/folders/gk/rsjjycnj2w35gqh4h8s48gs40000gn/T/
+2014-08-05 17:21:44 [INFO] Client environment:java.compiler=<NA>
+2014-08-05 17:21:44 [INFO] Client environment:os.name=Mac OS X
+2014-08-05 17:21:44 [INFO] Client environment:os.arch=x86_64
+2014-08-05 17:21:44 [INFO] Client environment:os.version=10.9.4
+2014-08-05 17:21:44 [INFO] Client environment:user.name=gumingcn
+2014-08-05 17:21:44 [INFO] Client environment:user.home=/Users/gumingcn
+2014-08-05 17:21:44 [INFO] Client environment:user.dir=/Users/gumingcn/dev/gitcode/typhoon
+2014-08-05 17:21:44 [INFO] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=500 watcher=org.I0Itec.zkclient.ZkClient@6fe78c96
+2014-08-05 17:21:44 [INFO] Opening socket connection to server /127.0.0.1:2181
+2014-08-05 17:21:44 [INFO] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2014-08-05 17:21:44 [INFO] Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x147a5633b2f0009, negotiated timeout = 6000
+2014-08-05 17:21:44 [INFO] zookeeper state changed (SyncConnected)
+2014-08-05 17:21:44 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], starting auto committer every 2000 ms
+2014-08-05 17:21:45 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], begin registering consumer typhoon-worker_localhost-1407230504679-997aba69 in ZK
+2014-08-05 17:21:45 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], end registering consumer typhoon-worker_localhost-1407230504679-997aba69 in ZK
+2014-08-05 17:21:45 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], starting watcher executor thread for consumer typhoon-worker_localhost-1407230504679-997aba69
+2014-08-05 17:21:45 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], begin rebalancing consumer typhoon-worker_localhost-1407230504679-997aba69 try #0
+2014-08-05 17:21:46 [INFO] [ConsumerFetcherManager-1407230504769] Stopping leader finder thread
+2014-08-05 17:21:46 [INFO] [ConsumerFetcherManager-1407230504769] Stopping all fetchers
+2014-08-05 17:21:46 [INFO] [ConsumerFetcherManager-1407230504769] All connections stopped
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], Cleared all relevant queues for this fetcher
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], Releasing partition ownership
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], Consumer typhoon-worker_localhost-1407230504679-997aba69 rebalancing the following partitions: ArrayBuffer(0, 1) for topic cart_operation_data with consumers: List(typhoon-worker_localhost-1407230504679-997aba69-0, typhoon-worker_localhost-1407230504679-997aba69-1, typhoon-worker_localhost-1407230504679-997aba69-2, typhoon-worker_localhost-1407230504679-997aba69-3)
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], typhoon-worker_localhost-1407230504679-997aba69-1 attempting to claim partition 1
+2014-08-05 17:21:46 [WARN] [typhoon-worker_localhost-1407230504679-997aba69], No broker partitions consumed by consumer thread typhoon-worker_localhost-1407230504679-997aba69-2 for topic cart_operation_data
+2014-08-05 17:21:46 [WARN] [typhoon-worker_localhost-1407230504679-997aba69], No broker partitions consumed by consumer thread typhoon-worker_localhost-1407230504679-997aba69-3 for topic cart_operation_data
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], typhoon-worker_localhost-1407230504679-997aba69-0 attempting to claim partition 0
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], typhoon-worker_localhost-1407230504679-997aba69-1 successfully owned partition 1 for topic cart_operation_data
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], typhoon-worker_localhost-1407230504679-997aba69-0 successfully owned partition 0 for topic cart_operation_data
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], Updating the cache
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], Consumer typhoon-worker_localhost-1407230504679-997aba69 selected partitions : cart_operation_data:0: fetched offset = 60: consumed offset = 60,cart_operation_data:1: fetched offset = 0: consumed offset = 0
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69-leader-finder-thread], Starting 
+2014-08-05 17:21:46 [INFO] [typhoon-worker_localhost-1407230504679-997aba69], end rebalancing consumer typhoon-worker_localhost-1407230504679-997aba69 try #0
+2014-08-05 17:21:46 [INFO] Verifying properties
+2014-08-05 17:21:46 [INFO] Property client.id is overridden to typhoon-worker
+2014-08-05 17:21:46 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:21:46 [INFO] Property request.timeout.ms is overridden to 30000
+2014-08-05 17:21:46 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:21:46 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:21:46 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:21:46 [INFO] [ConsumerFetcherThread-typhoon-worker_localhost-1407230504679-997aba69-0-0], Starting 
+2014-08-05 17:21:46 [INFO] [ConsumerFetcherManager-1407230504769] Added fetcher for partitions ArrayBuffer([[cart_operation_data,1], initOffset 0 to broker id:0,host:localhost,port:9092] , [[cart_operation_data,0], initOffset 60 to broker id:0,host:localhost,port:9092] )
+2014-08-05 17:21:54 [INFO] Verifying properties
+2014-08-05 17:21:54 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:21:54 [INFO] Property partitioner.class is overridden to org.jinn.typhoon.process.SimplePartitioner
+2014-08-05 17:21:54 [INFO] Property request.required.acks is overridden to 1
+2014-08-05 17:21:54 [INFO] Property serializer.class is overridden to kafka.serializer.StringEncoder
+2014-08-05 17:21:54 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:21:54 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:21:54 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:21:54 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:21:55 [INFO] Shutting down producer
+2014-08-05 17:21:55 [INFO] Closing all sync producers
+2014-08-05 17:21:55 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:26:12 [INFO] Verifying properties
+2014-08-05 17:26:12 [INFO] Property auto.commit.interval.ms is overridden to 2000
+2014-08-05 17:26:12 [INFO] Property group.id is overridden to typhoon-worker
+2014-08-05 17:26:12 [INFO] Property zookeeper.connect is overridden to 127.0.0.1:2181
+2014-08-05 17:26:12 [INFO] Property zookeeper.session.timeout.ms is overridden to 500
+2014-08-05 17:26:12 [INFO] Property zookeeper.sync.time.ms is overridden to 200
+2014-08-05 17:26:12 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], Connecting to zookeeper instance at 127.0.0.1:2181
+2014-08-05 17:26:12 [INFO] Starting ZkClient event thread.
+2014-08-05 17:26:12 [INFO] Client environment:zookeeper.version=3.3.3-1203054, built on 11/17/2011 05:47 GMT
+2014-08-05 17:26:12 [INFO] Client environment:host.name=127.0.0.1
+2014-08-05 17:26:12 [INFO] Client environment:java.version=1.6.0_65
+2014-08-05 17:26:12 [INFO] Client environment:java.vendor=Apple Inc.
+2014-08-05 17:26:12 [INFO] Client environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2014-08-05 17:26:12 [INFO] Client environment:java.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Users/gumingcn/dev/gitcode/typhoon/target/classes:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.2.3/jackson-jaxrs-json-provider-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.2.3/jackson-jaxrs-base-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.2.3/jackson-module-jaxb-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-cluster_2.10/2.3.2/akka-cluster_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-remote_2.10/2.3.2/akka-remote_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-actor_2.10/2.3.2/akka-actor_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/config/1.2.0/config-1.2.0.jar:/Users/gumingcn/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar:/Users/gumingcn/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/gumingcn/.m2/repository/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-testkit_2.10/2.3.2/akka-testkit_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-kernel_2.10/2.3.2/akka-kernel_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/redis4j/redis4j/0.1.0/redis4j-0.1.0.jar:/Users/gumingcn/.m2/repository/commons-lang/commons-lang/2.3/commons-lang-2.3.jar:/Users/gumingcn/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/gumingcn/.m2/repository/commons-pool/commons-pool/1.3/commons-pool-1.3.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/gumingcn/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/gumingcn/.m2/repository/redis/clients/jedis/2.2.1/jedis-2.2.1.jar:/Users/gumingcn/.m2/repository/commons-io/commons-io/1.2/commons-io-1.2.jar:/Users/gumingcn/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/Users/gumingcn/.m2/repository/com/rabbitmq/amqp-client/3.3.1/amqp-client-3.3.1.jar:/Users/gumingcn/.m2/repository/kafka/kafka-java/0.8.1.1/kafka-java-0.8.1.1.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-web/2.2.0/metrics-web-2.2.0.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/gumingcn/.m2/repository/org/apache/zookeeper/zookeeper/3.3.4/zookeeper-3.3.4.jar:/Users/gumingcn/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/gumingcn/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/gumingcn/.m2/repository/javax/jms/jms/1.1/jms-1.1.jar:/Users/gumingcn/.m2/repository/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar:/Users/gumingcn/.m2/repository/com/sun/jmx/jmxri/1.2.1/jmxri-1.2.1.jar:/Users/gumingcn/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/gumingcn/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar:/Users/gumingcn/.m2/repository/com/zkClient/zkClient/0.3/zkClient-0.3.jar:/Users/gumingcn/.m2/repository/net/sf/ehcache/ehcache-core/2.5.2/ehcache-core-2.5.2.jar:/Applications/IntelliJ IDEA 13.app/lib/idea_rt.jar
+2014-08-05 17:26:12 [INFO] Client environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2014-08-05 17:26:12 [INFO] Client environment:java.io.tmpdir=/var/folders/gk/rsjjycnj2w35gqh4h8s48gs40000gn/T/
+2014-08-05 17:26:12 [INFO] Client environment:java.compiler=<NA>
+2014-08-05 17:26:12 [INFO] Client environment:os.name=Mac OS X
+2014-08-05 17:26:12 [INFO] Client environment:os.arch=x86_64
+2014-08-05 17:26:12 [INFO] Client environment:os.version=10.9.4
+2014-08-05 17:26:12 [INFO] Client environment:user.name=gumingcn
+2014-08-05 17:26:12 [INFO] Client environment:user.home=/Users/gumingcn
+2014-08-05 17:26:12 [INFO] Client environment:user.dir=/Users/gumingcn/dev/gitcode/typhoon
+2014-08-05 17:26:12 [INFO] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=500 watcher=org.I0Itec.zkclient.ZkClient@4bf54c5f
+2014-08-05 17:26:12 [INFO] Opening socket connection to server /127.0.0.1:2181
+2014-08-05 17:26:12 [INFO] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2014-08-05 17:26:12 [INFO] Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x147a5633b2f000a, negotiated timeout = 6000
+2014-08-05 17:26:12 [INFO] zookeeper state changed (SyncConnected)
+2014-08-05 17:26:12 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], starting auto committer every 2000 ms
+2014-08-05 17:26:13 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], begin registering consumer typhoon-worker_localhost-1407230772564-8b3a47ba in ZK
+2014-08-05 17:26:13 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], end registering consumer typhoon-worker_localhost-1407230772564-8b3a47ba in ZK
+2014-08-05 17:26:13 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], starting watcher executor thread for consumer typhoon-worker_localhost-1407230772564-8b3a47ba
+2014-08-05 17:26:13 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], begin rebalancing consumer typhoon-worker_localhost-1407230772564-8b3a47ba try #0
+2014-08-05 17:26:14 [INFO] [ConsumerFetcherManager-1407230772660] Stopping leader finder thread
+2014-08-05 17:26:14 [INFO] [ConsumerFetcherManager-1407230772660] Stopping all fetchers
+2014-08-05 17:26:14 [INFO] [ConsumerFetcherManager-1407230772660] All connections stopped
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], Cleared all relevant queues for this fetcher
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], Releasing partition ownership
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], Consumer typhoon-worker_localhost-1407230772564-8b3a47ba rebalancing the following partitions: ArrayBuffer(0, 1) for topic cart_operation_data with consumers: List(typhoon-worker_localhost-1407230772564-8b3a47ba-0, typhoon-worker_localhost-1407230772564-8b3a47ba-1, typhoon-worker_localhost-1407230772564-8b3a47ba-2, typhoon-worker_localhost-1407230772564-8b3a47ba-3)
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], typhoon-worker_localhost-1407230772564-8b3a47ba-0 attempting to claim partition 0
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], typhoon-worker_localhost-1407230772564-8b3a47ba-1 attempting to claim partition 1
+2014-08-05 17:26:14 [WARN] [typhoon-worker_localhost-1407230772564-8b3a47ba], No broker partitions consumed by consumer thread typhoon-worker_localhost-1407230772564-8b3a47ba-2 for topic cart_operation_data
+2014-08-05 17:26:14 [WARN] [typhoon-worker_localhost-1407230772564-8b3a47ba], No broker partitions consumed by consumer thread typhoon-worker_localhost-1407230772564-8b3a47ba-3 for topic cart_operation_data
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], typhoon-worker_localhost-1407230772564-8b3a47ba-1 successfully owned partition 1 for topic cart_operation_data
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], typhoon-worker_localhost-1407230772564-8b3a47ba-0 successfully owned partition 0 for topic cart_operation_data
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], Updating the cache
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], Consumer typhoon-worker_localhost-1407230772564-8b3a47ba selected partitions : cart_operation_data:0: fetched offset = 70: consumed offset = 70,cart_operation_data:1: fetched offset = 0: consumed offset = 0
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba-leader-finder-thread], Starting 
+2014-08-05 17:26:14 [INFO] [typhoon-worker_localhost-1407230772564-8b3a47ba], end rebalancing consumer typhoon-worker_localhost-1407230772564-8b3a47ba try #0
+2014-08-05 17:26:14 [INFO] Verifying properties
+2014-08-05 17:26:14 [INFO] Property client.id is overridden to typhoon-worker
+2014-08-05 17:26:14 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:26:14 [INFO] Property request.timeout.ms is overridden to 30000
+2014-08-05 17:26:14 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:26:14 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:26:14 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:26:14 [INFO] [ConsumerFetcherThread-typhoon-worker_localhost-1407230772564-8b3a47ba-0-0], Starting 
+2014-08-05 17:26:14 [INFO] [ConsumerFetcherManager-1407230772660] Added fetcher for partitions ArrayBuffer([[cart_operation_data,1], initOffset 0 to broker id:0,host:localhost,port:9092] , [[cart_operation_data,0], initOffset 70 to broker id:0,host:localhost,port:9092] )
+2014-08-05 17:26:20 [INFO] Verifying properties
+2014-08-05 17:26:20 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:26:20 [INFO] Property partitioner.class is overridden to org.jinn.typhoon.process.SimplePartitioner
+2014-08-05 17:26:20 [INFO] Property request.required.acks is overridden to 1
+2014-08-05 17:26:20 [INFO] Property serializer.class is overridden to kafka.serializer.StringEncoder
+2014-08-05 17:26:20 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:26:20 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:26:20 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:26:20 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:26:20 [INFO] Shutting down producer
+2014-08-05 17:26:20 [INFO] Closing all sync producers
+2014-08-05 17:26:20 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:39:27 [INFO] Verifying properties
+2014-08-05 17:39:27 [INFO] Property auto.commit.interval.ms is overridden to 2000
+2014-08-05 17:39:27 [INFO] Property group.id is overridden to typhoon-worker
+2014-08-05 17:39:27 [INFO] Property zookeeper.connect is overridden to 127.0.0.1:2181
+2014-08-05 17:39:27 [INFO] Property zookeeper.session.timeout.ms is overridden to 500
+2014-08-05 17:39:27 [INFO] Property zookeeper.sync.time.ms is overridden to 200
+2014-08-05 17:39:27 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], Connecting to zookeeper instance at 127.0.0.1:2181
+2014-08-05 17:39:27 [INFO] Starting ZkClient event thread.
+2014-08-05 17:39:27 [INFO] Client environment:zookeeper.version=3.3.3-1203054, built on 11/17/2011 05:47 GMT
+2014-08-05 17:39:27 [INFO] Client environment:host.name=127.0.0.1
+2014-08-05 17:39:27 [INFO] Client environment:java.version=1.6.0_65
+2014-08-05 17:39:27 [INFO] Client environment:java.vendor=Apple Inc.
+2014-08-05 17:39:27 [INFO] Client environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2014-08-05 17:39:27 [INFO] Client environment:java.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Users/gumingcn/dev/gitcode/typhoon/target/classes:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.2.3/jackson-jaxrs-json-provider-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.2.3/jackson-jaxrs-base-2.2.3.jar:/Users/gumingcn/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.2.3/jackson-module-jaxb-annotations-2.2.3.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-cluster_2.10/2.3.2/akka-cluster_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-remote_2.10/2.3.2/akka-remote_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-actor_2.10/2.3.2/akka-actor_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/config/1.2.0/config-1.2.0.jar:/Users/gumingcn/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar:/Users/gumingcn/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/gumingcn/.m2/repository/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-testkit_2.10/2.3.2/akka-testkit_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/com/typesafe/akka/akka-kernel_2.10/2.3.2/akka-kernel_2.10-2.3.2.jar:/Users/gumingcn/.m2/repository/redis4j/redis4j/0.1.0/redis4j-0.1.0.jar:/Users/gumingcn/.m2/repository/commons-lang/commons-lang/2.3/commons-lang-2.3.jar:/Users/gumingcn/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/gumingcn/.m2/repository/commons-pool/commons-pool/1.3/commons-pool-1.3.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/Users/gumingcn/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/gumingcn/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/gumingcn/.m2/repository/redis/clients/jedis/2.2.1/jedis-2.2.1.jar:/Users/gumingcn/.m2/repository/commons-io/commons-io/1.2/commons-io-1.2.jar:/Users/gumingcn/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/Users/gumingcn/.m2/repository/com/rabbitmq/amqp-client/3.3.1/amqp-client-3.3.1.jar:/Users/gumingcn/.m2/repository/kafka/kafka-java/0.8.1.1/kafka-java-0.8.1.1.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-web/2.2.0/metrics-web-2.2.0.jar:/Users/gumingcn/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/gumingcn/.m2/repository/org/apache/zookeeper/zookeeper/3.3.4/zookeeper-3.3.4.jar:/Users/gumingcn/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/gumingcn/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/gumingcn/.m2/repository/javax/jms/jms/1.1/jms-1.1.jar:/Users/gumingcn/.m2/repository/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar:/Users/gumingcn/.m2/repository/com/sun/jmx/jmxri/1.2.1/jmxri-1.2.1.jar:/Users/gumingcn/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/gumingcn/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar:/Users/gumingcn/.m2/repository/com/zkClient/zkClient/0.3/zkClient-0.3.jar:/Users/gumingcn/.m2/repository/net/sf/ehcache/ehcache-core/2.5.2/ehcache-core-2.5.2.jar:/Applications/IntelliJ IDEA 13.app/lib/idea_rt.jar
+2014-08-05 17:39:27 [INFO] Client environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2014-08-05 17:39:27 [INFO] Client environment:java.io.tmpdir=/var/folders/gk/rsjjycnj2w35gqh4h8s48gs40000gn/T/
+2014-08-05 17:39:27 [INFO] Client environment:java.compiler=<NA>
+2014-08-05 17:39:27 [INFO] Client environment:os.name=Mac OS X
+2014-08-05 17:39:27 [INFO] Client environment:os.arch=x86_64
+2014-08-05 17:39:27 [INFO] Client environment:os.version=10.9.4
+2014-08-05 17:39:27 [INFO] Client environment:user.name=gumingcn
+2014-08-05 17:39:27 [INFO] Client environment:user.home=/Users/gumingcn
+2014-08-05 17:39:27 [INFO] Client environment:user.dir=/Users/gumingcn/dev/gitcode/typhoon
+2014-08-05 17:39:27 [INFO] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=500 watcher=org.I0Itec.zkclient.ZkClient@6fe78c96
+2014-08-05 17:39:27 [INFO] Opening socket connection to server /127.0.0.1:2181
+2014-08-05 17:39:27 [INFO] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2014-08-05 17:39:27 [INFO] Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x147a5633b2f000b, negotiated timeout = 6000
+2014-08-05 17:39:27 [INFO] zookeeper state changed (SyncConnected)
+2014-08-05 17:39:27 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], starting auto committer every 2000 ms
+2014-08-05 17:39:28 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], begin registering consumer typhoon-worker_localhost-1407231567794-d742fa7f in ZK
+2014-08-05 17:39:28 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], end registering consumer typhoon-worker_localhost-1407231567794-d742fa7f in ZK
+2014-08-05 17:39:28 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], starting watcher executor thread for consumer typhoon-worker_localhost-1407231567794-d742fa7f
+2014-08-05 17:39:28 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], begin rebalancing consumer typhoon-worker_localhost-1407231567794-d742fa7f try #0
+2014-08-05 17:39:29 [INFO] [ConsumerFetcherManager-1407231567905] Stopping leader finder thread
+2014-08-05 17:39:29 [INFO] [ConsumerFetcherManager-1407231567905] Stopping all fetchers
+2014-08-05 17:39:29 [INFO] [ConsumerFetcherManager-1407231567905] All connections stopped
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], Cleared all relevant queues for this fetcher
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], Cleared the data chunks in all the consumer message iterators
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], Committing all offsets after clearing the fetcher queues
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], Releasing partition ownership
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], Consumer typhoon-worker_localhost-1407231567794-d742fa7f rebalancing the following partitions: ArrayBuffer(0, 1) for topic cart_operation_data with consumers: List(typhoon-worker_localhost-1407231567794-d742fa7f-0, typhoon-worker_localhost-1407231567794-d742fa7f-1, typhoon-worker_localhost-1407231567794-d742fa7f-2, typhoon-worker_localhost-1407231567794-d742fa7f-3)
+2014-08-05 17:39:29 [WARN] [typhoon-worker_localhost-1407231567794-d742fa7f], No broker partitions consumed by consumer thread typhoon-worker_localhost-1407231567794-d742fa7f-3 for topic cart_operation_data
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], typhoon-worker_localhost-1407231567794-d742fa7f-0 attempting to claim partition 0
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], typhoon-worker_localhost-1407231567794-d742fa7f-1 attempting to claim partition 1
+2014-08-05 17:39:29 [WARN] [typhoon-worker_localhost-1407231567794-d742fa7f], No broker partitions consumed by consumer thread typhoon-worker_localhost-1407231567794-d742fa7f-2 for topic cart_operation_data
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], typhoon-worker_localhost-1407231567794-d742fa7f-1 successfully owned partition 1 for topic cart_operation_data
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], typhoon-worker_localhost-1407231567794-d742fa7f-0 successfully owned partition 0 for topic cart_operation_data
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], Updating the cache
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], Consumer typhoon-worker_localhost-1407231567794-d742fa7f selected partitions : cart_operation_data:0: fetched offset = 80: consumed offset = 80,cart_operation_data:1: fetched offset = 0: consumed offset = 0
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f-leader-finder-thread], Starting 
+2014-08-05 17:39:29 [INFO] [typhoon-worker_localhost-1407231567794-d742fa7f], end rebalancing consumer typhoon-worker_localhost-1407231567794-d742fa7f try #0
+2014-08-05 17:39:29 [INFO] Verifying properties
+2014-08-05 17:39:29 [INFO] Property client.id is overridden to typhoon-worker
+2014-08-05 17:39:29 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:39:29 [INFO] Property request.timeout.ms is overridden to 30000
+2014-08-05 17:39:29 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:39:29 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:39:29 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:39:29 [INFO] [ConsumerFetcherThread-typhoon-worker_localhost-1407231567794-d742fa7f-0-0], Starting 
+2014-08-05 17:39:29 [INFO] [ConsumerFetcherManager-1407231567905] Added fetcher for partitions ArrayBuffer([[cart_operation_data,1], initOffset 0 to broker id:0,host:localhost,port:9092] , [[cart_operation_data,0], initOffset 80 to broker id:0,host:localhost,port:9092] )
+2014-08-05 17:39:34 [INFO] Verifying properties
+2014-08-05 17:39:34 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:39:34 [INFO] Property partitioner.class is overridden to org.jinn.typhoon.process.SimplePartitioner
+2014-08-05 17:39:34 [INFO] Property request.required.acks is overridden to 1
+2014-08-05 17:39:34 [INFO] Property serializer.class is overridden to kafka.serializer.StringEncoder
+2014-08-05 17:39:34 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:39:34 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:39:34 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:39:34 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:39:34 [INFO] Shutting down producer
+2014-08-05 17:39:34 [INFO] Closing all sync producers
+2014-08-05 17:39:34 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:39:35 [INFO] redis not found the key or value is blank,key:vipcart_6_VIP_NH
+2014-08-05 17:39:35 [INFO] redis not found the key or value is blank,key:vipcart_9_VIP_NH
+2014-08-05 17:39:35 [INFO] redis not found the key or value is blank,key:vipcart_7_VIP_NH
+2014-08-05 17:39:35 [INFO] redis not found the key or value is blank,key:vipcart_2_VIP_NH
+2014-08-05 17:39:35 [INFO] redis not found the key or value is blank,key:vipcart_3_VIP_NH
+2014-08-05 17:39:35 [INFO] redis not found the key or value is blank,key:vipcart_5_VIP_NH
+2014-08-05 17:39:35 [INFO] redis not found the key or value is blank,key:vipcart_8_VIP_NH
+2014-08-05 17:39:35 [INFO] redis not found the key or value is blank,key:vipcart_1_VIP_NH
+2014-08-05 17:39:35 [INFO] redis not found the key or value is blank,key:vipcart_4_VIP_NH
+2014-08-05 17:39:35 [INFO] redis not found the key or value is blank,key:vipcart_0_VIP_NH
+2014-08-05 17:47:49 [INFO] Verifying properties
+2014-08-05 17:47:49 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-05 17:47:49 [INFO] Property partitioner.class is overridden to org.jinn.typhoon.process.SimplePartitioner
+2014-08-05 17:47:49 [INFO] Property request.required.acks is overridden to 1
+2014-08-05 17:47:49 [INFO] Property serializer.class is overridden to kafka.serializer.StringEncoder
+2014-08-05 17:47:49 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-05 17:47:49 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:47:49 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:47:49 [INFO] Connected to localhost:9092 for producing
+2014-08-05 17:47:49 [INFO] redis not found the key or value is blank,key:vipcart_0_VIP_NH
+2014-08-05 17:47:49 [INFO] redis not found the key or value is blank,key:vipcart_1_VIP_NH
+2014-08-05 17:47:49 [INFO] redis not found the key or value is blank,key:vipcart_2_VIP_NH
+2014-08-05 17:47:49 [INFO] redis not found the key or value is blank,key:vipcart_3_VIP_NH
+2014-08-05 17:47:49 [INFO] redis not found the key or value is blank,key:vipcart_4_VIP_NH
+2014-08-05 17:47:49 [INFO] redis not found the key or value is blank,key:vipcart_5_VIP_NH
+2014-08-05 17:47:49 [INFO] redis not found the key or value is blank,key:vipcart_6_VIP_NH
+2014-08-05 17:47:49 [INFO] redis not found the key or value is blank,key:vipcart_8_VIP_NH
+2014-08-05 17:47:49 [INFO] Shutting down producer
+2014-08-05 17:47:49 [INFO] redis not found the key or value is blank,key:vipcart_9_VIP_NH
+2014-08-05 17:47:49 [INFO] Closing all sync producers
+2014-08-05 17:47:49 [INFO] Disconnecting from localhost:9092
+2014-08-05 17:47:49 [INFO] check fired redis_key:vipcart_7_VIP_NHredis_ut:1406168332.35081800,kafka_ut:1406168332.35081900msg:CartMessage{action='edit', time='1406168332.35081900', redis_key_hash='1', source='web', mars_cid='', session_id='', info=Info{user_id=7, cart_id=6185, cart_record_id=8765, size_id=2756943, brand_id=7511, merchandise_id=1001950, num=2, channel='te', warehouse='VIP_NH'}, DB_key_hash='null'}

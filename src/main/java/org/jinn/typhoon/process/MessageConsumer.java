@@ -5,7 +5,9 @@ import kafka.consumer.KafkaStream;
 import kafka.javaapi.consumer.ConsumerConnector;
 import org.jinn.typhoon.akka.remote.client.RemoteLookupApplication;
 import org.jinn.typhoon.common.DispatcherFactory;
+import org.jinn.typhoon.common.KafkaConfig;
 import org.jinn.typhoon.common.MessageDispatcher;
+import org.jinn.typhoon.utils.ResourceUtil;
 
 import java.util.HashMap;
 import java.util.List;
@@ -36,8 +38,10 @@ public class MessageConsumer {
 
     public void shutdown() {
         if (consumer != null) consumer.shutdown();
-        la.shutdown();
-//        if (executor != null) executor.shutdown();
+        if (la != null) {
+            la.shutdown();
+        }
+        if (executor != null) executor.shutdown();
     }
 
     public void pull(int a_numThreads) {
@@ -61,19 +65,21 @@ public class MessageConsumer {
 
     private static ConsumerConfig createConsumerConfig(String a_zookeeper, String a_groupId) {
         Properties props = new Properties();
+        KafkaConfig kafkaConfig=ResourceUtil.getKafkaConfig();
         props.put("zookeeper.connect", a_zookeeper);
         props.put("group.id", a_groupId);
-        props.put("zookeeper.session.timeout.ms", "400");
-        props.put("zookeeper.sync.time.ms", "200");
-        props.put("auto.commit.interval.ms", "1000");
+        props.put("zookeeper.session.timeout.ms", kafkaConfig.getZkSessionTimeOut());
+        props.put("zookeeper.sync.time.ms", kafkaConfig.getZkSyncTime());
+        props.put("auto.commit.interval.ms", kafkaConfig.getAutoCommitTime());
 
         return new ConsumerConfig(props);
     }
 
     public static void main(String[] args) {
-        String zooKeeper = "localhost:2181";
-        String groupId = "test_c";
-        String topic = "test";
+        KafkaConfig kafkaConfig=ResourceUtil.getKafkaConfig();
+        String zooKeeper = kafkaConfig.getZkHost();
+        String groupId = kafkaConfig.getGroupId();
+        String topic = kafkaConfig.getTopic();
         int threads = 4;
 
         MessageConsumer example = new MessageConsumer(zooKeeper, groupId, topic,"akka");

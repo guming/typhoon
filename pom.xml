@@ -136,9 +136,21 @@
     </dependencies>
     <properties>
         <spring.version>3.0.6.RELEASE</spring.version>
-        <jdk.version>1.8</jdk.version>
+        <jdk.version>1.6</jdk.version>
     </properties>
     <build>
+        <!--
+            <resources>
+                <resource>
+                    <directory>src/main/resources</directory>
+                    <excludes>
+                        <exclude>*.conf</exclude>
+                        <exclude>*.properties</exclude>
+                    </excludes>
+                    <filtering>false</filtering>
+                </resource>
+            </resources>
+            -->
         <plugins>
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
@@ -158,8 +170,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.0</version>
                 <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
+                    <source>1.6</source>
+                    <target>1.6</target>
                 </configuration>
             </plugin>
             <!--

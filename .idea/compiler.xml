@@ -26,7 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="typhoon" target="1.8" />
+      <module name="typhoon" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

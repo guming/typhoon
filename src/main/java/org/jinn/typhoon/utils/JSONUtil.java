@@ -1,5 +1,6 @@
 package org.jinn.typhoon.utils;
 
+import com.fasterxml.jackson.databind.DeserializationConfig;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.text.DecimalFormat;
@@ -12,7 +13,8 @@ import java.util.Map;
 public class JSONUtil {
     private static final ObjectMapper objectMapper =  new ObjectMapper();
 
-    public JSONUtil() {
+    static {
+//        objectMapper.configure(DeserializationConfig., false);
     }
 
     public static void main(String[] args) {

@@ -1,0 +1,12 @@
+2014-08-04 17:47:37 [INFO] Verifying properties
+2014-08-04 17:47:37 [INFO] Property metadata.broker.list is overridden to localhost:9092
+2014-08-04 17:47:37 [INFO] Property partitioner.class is overridden to org.jinn.typhoon.process.SimplePartitioner
+2014-08-04 17:47:37 [INFO] Property request.required.acks is overridden to 1
+2014-08-04 17:47:37 [INFO] Property serializer.class is overridden to kafka.serializer.StringEncoder
+2014-08-04 17:47:38 [INFO] Fetching metadata from broker id:0,host:localhost,port:9092 with correlation id 0 for 1 topic(s) Set(cart_operation_data)
+2014-08-04 17:47:38 [INFO] Connected to localhost:9092 for producing
+2014-08-04 17:47:38 [INFO] Disconnecting from localhost:9092
+2014-08-04 17:47:38 [INFO] Connected to 10.104.11.116:9092 for producing
+2014-08-04 17:47:41 [INFO] Shutting down producer
+2014-08-04 17:47:41 [INFO] Closing all sync producers
+2014-08-04 17:47:41 [INFO] Disconnecting from 10.104.11.116:9092

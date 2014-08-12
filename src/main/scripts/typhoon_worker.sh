@@ -26,7 +26,7 @@ start(){
                       -XX:+PrintGCDetails \
                       -XX:+PrintGCTimeStamps \
                       -Xloggc:logs/gc`date +%Y%m%d%H%M%S`.log \
-                      -cp $CP org.jinn.typhoon.akka.remote.server.CheckServerStart >>/Users/gumingcn/dev/logs/typhoon_s.log &
+                      -cp $CP org.jinn.typhoon.akka.remote.server.CheckWorkerStart >>/Users/gumingcn/dev/logs/typhoon_s.log &
                 echo $! >"$pidfile"
                 if [ "$?" -eq 0 ] ; then
                         printf 'Done\n'
@@ -38,7 +38,7 @@ start(){
 }
 # stop the server
 stop(){
-  printf 'Stopping the server of typhoon\n'
+  printf 'Stopping the server of typhoon worker \n'
   if [ -f "$pidfile" ] ; then
     pid=`cat "$pidfile"`
     printf "Sending the terminal signal to the process: %s\n" "$pid"
