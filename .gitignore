@@ -1,0 +1,5 @@
+#ignore files
+target/*
+*.log.*
+.idea/*
+*.log
