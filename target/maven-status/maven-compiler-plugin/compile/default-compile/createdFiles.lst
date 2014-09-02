@@ -21,6 +21,6 @@ org/jinn/typhoon/akka/remote/client/RemoteLookupApplication.class
 org/jinn/typhoon/process/MessageProducer.class
 org/jinn/typhoon/common/MessageDispatcher.class
 org/jinn/typhoon/common/DispatcherFactory.class
-org/jinn/typhoon/common/KafkaConfig.class
 org/jinn/typhoon/utils/FormatUtil.class
+org/jinn/typhoon/common/KafkaConfig.class
 org/jinn/typhoon/akka/remote/client/InternalMsg$ActorOpMsg.class

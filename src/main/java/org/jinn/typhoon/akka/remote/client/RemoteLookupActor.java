@@ -3,6 +3,7 @@ package org.jinn.typhoon.akka.remote.client;
 import akka.actor.*;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
+import org.jinn.typhoon.akka.entity.InternalMsg;
 
 /**
  * Created by gumingcn on 14-7-21.

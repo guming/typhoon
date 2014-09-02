@@ -17,7 +17,7 @@ public class MessageProducerTest {
     public static void main(String[] args) {
         MessageProducer messageProducer = new MessageProducer();
 
-        long events = 10;
+        long events = 10000;
 
         for (long nEvents = 0; nEvents < events; nEvents++) {
 
