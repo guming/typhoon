@@ -16,3 +16,5 @@ typhoon-1.0-SNAPSHOT
 2.启动 typhoon_dispatcher.sh
 
 command:start|stop|restart
+
+havefun
