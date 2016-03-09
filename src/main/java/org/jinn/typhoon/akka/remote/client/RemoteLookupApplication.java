@@ -36,7 +36,7 @@ public class RemoteLookupApplication  extends MessageDispatcher implements Boota
     @Override
     public void dispatchMessage(Message message) {
 
-        actor.tell(new InternalMsg.ActorOpMsg(getRemoteActor(), message), null);
+        remoteActor.tell(new InternalMsg.ActorOpMsg(getRemoteActor(), message), null);
     }
 
     @Override

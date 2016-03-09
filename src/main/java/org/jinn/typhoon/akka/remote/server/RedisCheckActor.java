@@ -17,7 +17,6 @@ public class RedisCheckActor extends UntypedActor {
 
     @Override
     public void onReceive(Object message) throws Exception {
-
         if(message instanceof Message) {
 
             String msg=((Message) message).getMsg();

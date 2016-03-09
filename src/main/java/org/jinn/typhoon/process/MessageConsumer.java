@@ -49,7 +49,7 @@ public class MessageConsumer {
         topicCountMap.put(topic, new Integer(a_numThreads));
         Map<String, List<KafkaStream<byte[], byte[]>>> consumerMap = consumer.createMessageStreams(topicCountMap);
         List<KafkaStream<byte[], byte[]>> streams = consumerMap.get(topic);
-
+        System.out.println("s");
         // now launch all the threads
         //
         executor = Executors.newFixedThreadPool(a_numThreads);

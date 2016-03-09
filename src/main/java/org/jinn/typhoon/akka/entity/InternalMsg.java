@@ -3,12 +3,14 @@ package org.jinn.typhoon.akka.entity;
 import akka.actor.ActorRef;
 import org.jinn.typhoon.common.Message;
 
+import java.io.Serializable;
+
 /**
  * Created by gumingcn on 14-7-21.
  */
-public class InternalMsg {
+public class InternalMsg implements Serializable{
 
-    public static class ActorOpMsg {
+    public static class ActorOpMsg implements Serializable{
         private final ActorRef actor;
         private final Message msg;
 
