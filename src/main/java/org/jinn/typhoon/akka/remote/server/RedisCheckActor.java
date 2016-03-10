@@ -3,6 +3,7 @@ package org.jinn.typhoon.akka.remote.server;
 import akka.actor.UntypedActor;
 import org.apache.commons.lang.StringUtils;
 import org.jboss.netty.util.internal.StringUtil;
+import org.jinn.typhoon.akka.entity.InternalMsg;
 import org.jinn.typhoon.common.CartMessage;
 import org.jinn.typhoon.common.Message;
 import org.jinn.typhoon.utils.CommonLogger;
@@ -17,11 +18,11 @@ public class RedisCheckActor extends UntypedActor {
 
     @Override
     public void onReceive(Object message) throws Exception {
-        if(message instanceof Message) {
+        if(message instanceof InternalMsg.ActorOpMsg) {
 
-            String msg=((Message) message).getMsg();
-            CartMessage cm= (CartMessage) JSONUtil.jsonToBean(msg, CartMessage.class);
-            CommonLogger.fire("kafka not found the updatetime or value is blank,key:" + cm.toString());
+            Message msg=((InternalMsg.ActorOpMsg) message).getMsg();
+            CartMessage cm= (CartMessage) JSONUtil.jsonToBean(msg.getMsg(), CartMessage.class);
+            System.out.println("kafka not found the updatetime or value is blank,key:" + cm.toString());
 //            StringBuffer redis_key = new StringBuffer(32);
 //            redis_key.append(Constant.VIPCART).append(cm.getInfo().getUser_id())
 //                    .append(Constant.UNDERLINE)
