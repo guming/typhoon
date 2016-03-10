@@ -26,7 +26,7 @@ start(){
                       -XX:+PrintGCDetails \
                       -XX:+PrintGCTimeStamps \
                       -Xloggc:logs/gc`date +%Y%m%d%H%M%S`.log \
-                      -cp $CP org.jinn.typhoon.process.ConsumerServerStart >>/Users/gumingcn/dev/logs/typhoon_s2.log &
+                      -cp $CP org.jinn.typhoon.process.ConsumerServerStart >>/opt/logs/typhoon_s2.log &
                 echo $! >"$pidfile"
                 if [ "$?" -eq 0 ] ; then
                         printf 'Done\n'
