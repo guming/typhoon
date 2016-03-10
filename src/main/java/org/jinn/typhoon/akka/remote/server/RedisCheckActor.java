@@ -23,6 +23,7 @@ public class RedisCheckActor extends UntypedActor {
             Message msg=((InternalMsg.ActorOpMsg) message).getMsg();
             CartMessage cm= (CartMessage) JSONUtil.jsonToBean(msg.getMsg(), CartMessage.class);
             System.out.println("kafka not found the updatetime or value is blank,key:" + cm.toString());
+            CommonLogger.fire("not found:"+cm.toString());
 //            StringBuffer redis_key = new StringBuffer(32);
 //            redis_key.append(Constant.VIPCART).append(cm.getInfo().getUser_id())
 //                    .append(Constant.UNDERLINE)
